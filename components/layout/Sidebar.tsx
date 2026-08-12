@@ -13,18 +13,11 @@ interface SidebarProps {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   user: UserProp;
+  links: { label: string; href: string }[];
 }
-const links = [
-  { label: "Home", href: "/" },
-  { label: "Exhibition Map", href: "/exhibition-map" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
-  { label: "Booking History", href: "/booking-history" },
-  // { label: "Notifications", href: "/notifications" },
-];
 
-const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user }) => {
+
+const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user, links }) => {
   const pathname = usePathname();
   const [logOutModalOpen, setLogOutModalOpen] = useState(false);
   return (
@@ -35,7 +28,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user }) => {
         ${isOpen ? "translate-x-0" : "translate-x-full"}
       `}
     >
-      <div className="h-20  flex justify-between pl-4 items-center border-b">
+      <div className="h-20  flex justify-between px-4 items-center border-b">
         <div>
           <Link href="/" onClick={() => setIsOpen(false)}>
                       <p className="text-3xl font-semibold" >The Wings</p>
@@ -47,7 +40,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user }) => {
             /> */}
           </Link>
         </div>
-        <Button onClick={() => setIsOpen(!isOpen)} variant="ghost">
+        <Button onClick={() => setIsOpen(!isOpen)} variant="outline" className="size-8 px-0">
           <X className="size-6" />
         </Button>
       </div>

@@ -44,7 +44,7 @@ const Navbar = () => {
               width={68}
               height={56}
             /> */}
-            <p className="text-3xl font-semibold">The Wings</p>
+            <p className="text-xl md:text-3xl font-semibold">The Wings</p>
           </Link>
         </div>
 
@@ -81,8 +81,8 @@ const Navbar = () => {
           </div>
           <Button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className=" px-0 h-13 xl:hidden"
-            variant="ghost"
+            className=" px-0 size-8 xl:hidden "
+            variant="outline"
           >
             <HiOutlineMenuAlt3 className="size-6" />
           </Button>
@@ -91,7 +91,12 @@ const Navbar = () => {
       </div>
 
       {/* sidebar */}
-      <Sidebar user={user} setIsOpen={setSidebarOpen} isOpen={sidebarOpen} />
+      <Sidebar
+        user={user}
+        links={links}
+        setIsOpen={setSidebarOpen}
+        isOpen={sidebarOpen}
+      />
       {/* <AuthModal open={isOpen} setOpen={setIsOpen} />
       <LogOutModal
         isOpen={logOutModalOpen}
