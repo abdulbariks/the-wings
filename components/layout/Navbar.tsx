@@ -44,7 +44,7 @@ const Navbar = () => {
               width={68}
               height={56}
             /> */}
-            <p className="text-3xl font-semibold" >The Wings</p>
+            <p className="text-3xl font-semibold">The Wings</p>
           </Link>
         </div>
 
@@ -57,7 +57,9 @@ const Navbar = () => {
                 <Link
                   href={link.href}
                   className={`transition-colors ${
-                    isActive ? "text-primary border-b border-primary" : "text-[#777980] border-b border-[#F4F3F1]"
+                    isActive
+                      ? "text-primary border-b border-primary"
+                      : "text-[#777980] border-b border-[#F4F3F1]"
                   }`}
                 >
                   {link.label}
@@ -73,12 +75,9 @@ const Navbar = () => {
               Sign In
             </Button>
           </Link>
-          <Button >Join The Wings</Button>
+          <Button>Join The Wings</Button>
           <div className="hidden md:block">
-            <ProfileDropdown
-              onLogout={() => setLogOutModalOpen(true)}
-              user={user}
-            />
+            <ProfileDropdown />
           </div>
           <Button
             onClick={() => setSidebarOpen(!sidebarOpen)}
