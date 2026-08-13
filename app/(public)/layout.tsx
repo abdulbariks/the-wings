@@ -9,9 +9,7 @@ const PublicLayout = ({ children }: { children: React.ReactNode }) => {
         <Navbar />
       </nav>
       <main className="flex-1">{children}</main>
-      <div>
-        {/* <Footer /> */}
-      </div>
+      <div>{/* <Footer /> */}</div>
     </div>
   );
 };
