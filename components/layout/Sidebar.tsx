@@ -1,0 +1,120 @@
+"use client";
+import { User, X } from "lucide-react";
+import { Button } from "../ui/button";
+import { IoLogInOutline } from "react-icons/io5";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+// import LogOutModal from "@/app/(auth)/_components/LogOutModal";
+import { useState } from "react";
+import { UserProp } from "@/types/User";
+
+interface SidebarProps {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  user: UserProp;
+  links: { label: string; href: string }[];
+}
+
+
+const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user, links }) => {
+  const pathname = usePathname();
+  const [logOutModalOpen, setLogOutModalOpen] = useState(false);
+  return (
+    <aside
+      className={`
+        fixed top-0 left-0 w-full h-screen bg-background flex flex-col 
+        transition-transform duration-300 ease-in-out z-999
+        ${isOpen ? "translate-x-0" : "translate-x-full"}
+      `}
+    >
+      <div className="h-20  flex justify-between px-4 items-center border-b">
+        <div>
+          <Link href="/" onClick={() => setIsOpen(false)}>
+                      <p className="text-3xl font-semibold" >The Wings</p>
+            {/* <Image
+              src="/logo.webp"
+              alt="ITBA EXPO The Next 100"
+              width={68}
+              height={56}
+            /> */}
+          </Link>
+        </div>
+        <Button onClick={() => setIsOpen(!isOpen)} variant="outline" className="size-8 px-0">
+          <X className="size-6" />
+        </Button>
+      </div>
+      {/* sidebar body */}
+      <div className="flex-1 overflow-auto px-4">
+        <div className="flex flex-col items-center gap-2  p-4 justify-center">
+          {user?.image ? (
+            <Image
+              src={user.image}
+              alt={user.name}
+              height={48}
+              width={48}
+              className="object-cover overflow-hidden rounded-full size-24"
+            />
+          ) : (
+            <div className="size-24 rounded-full bg-gray-300 text-gray-600 flex justify-center items-center">
+              <User size={36} />
+            </div>
+          )}
+          <h3 className="text-2xl font-medium text-center">
+            {user?.name ? user?.name : "User"}
+          </h3>
+          <Link href="/profile">
+            <Button onClick={() => setIsOpen(false)} className="px-8">
+              <User className="size-5i" /> My Profile
+            </Button>
+          </Link>
+        </div>
+
+        {/* menu items */}
+        <div className="border-t py-8">
+          <ul className="flex flex-col gap-8 items-center font-medium text-lg">
+            {links.map((link) => {
+              const isActive = pathname === link.href;
+
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`transition-colors ${
+                      isActive ? "text-primary " : ""
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+      <div className="h-20  flex justify-center items-center border-t">
+        <Link href="/sign-in">
+          <Button variant="outline" className="px-10 ">
+            Sign In
+          </Button>
+        </Link>
+        <Button variant="outline" className="px-10 ring-red-500 text-red-500">
+          <span
+            onClick={() => setLogOutModalOpen(true)}
+            className="flex items-center gap-2 "
+          >
+            <IoLogInOutline className="size-5" />
+            Log Out
+          </span>
+        </Button>
+      </div>
+      {/* <LogOutModal
+        isOpen={logOutModalOpen}
+        onClose={() => setLogOutModalOpen(false)}
+      /> */}
+    </aside>
+  );
+};
+
+export default Sidebar;
