@@ -8,7 +8,7 @@ interface AuthHeroProps {
 
 export const AuthHero = ({ imageUrl, title, description }: AuthHeroProps) => {
   return (
-    <div className="relative flex flex-col justify-between w-full h-[600px] md:h-full min-h-[500px] bg-zinc-900 text-black p-6 overflow-hidden rounded-lg">
+    <div className="relative flex flex-col justify-between w-full h-150 md:h-full min-h-125 bg-zinc-900 text-black p-6 overflow-hidden rounded-lg">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
