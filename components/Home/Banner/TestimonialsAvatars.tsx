@@ -5,7 +5,7 @@ const testimonials = ["avatar-1.jpg", "avatar-2.jpg", "avatar-3.jpg"];
 
 export default function TestimonialsAvatars() {
   return (
-    <div className="flex items-center justify-center lg:justify-start">
+    <div className="flex items-center justify-center md:justify-start">
       <div
         className="
         inline-flex
