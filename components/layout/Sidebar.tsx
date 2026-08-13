@@ -23,7 +23,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user, links }) => 
   return (
     <aside
       className={`
-        fixed top-0 left-0 w-full h-screen bg-background flex flex-col 
+        fixed top-0 left-0 w-full h-screen bg-[#F4F3F1] flex flex-col 
         transition-transform duration-300 ease-in-out z-999
         ${isOpen ? "translate-x-0" : "translate-x-full"}
       `}
@@ -81,9 +81,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user, links }) => 
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`transition-colors ${
-                      isActive ? "text-primary " : ""
-                    }`}
+                  className={`transition-colors ${
+                    isActive
+                      ? "text-primary border-b border-primary"
+                      : "text-[#777980] border-b border-[#F4F3F1]"
+                  }`}
                   >
                     {link.label}
                   </Link>

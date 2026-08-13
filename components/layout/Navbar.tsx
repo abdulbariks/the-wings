@@ -34,8 +34,10 @@ const Navbar = () => {
   ];
 
   return (
-    <section className="bg-[#F4F3F1]">
-      <div className="container flex justify-between items-center h-20 xl:h-22">
+    <section>
+      <div className="h-20 xl:h-22"></div>
+      <div className="w-full fixed top-0 bg-[#F4F3F1]">
+      <div className="container flex justify-between items-center h-20 xl:h-22 ">
         <div>
           <Link href="/">
             {/* <Image
@@ -44,7 +46,7 @@ const Navbar = () => {
               width={68}
               height={56}
             /> */}
-            <p className="text-xl md:text-3xl font-semibold">The Wings</p>
+            <p className="text-xl md:text-3xl font-serif font-bold">The Wings</p>
           </Link>
         </div>
 
@@ -88,6 +90,7 @@ const Navbar = () => {
           </Button>
         </div>
         {/* user dropdown */}
+      </div>
       </div>
 
       {/* sidebar */}

@@ -19,7 +19,7 @@ const ProfileDropdown = () => {
         render={
           <button
             type="button"
-            className=" outline-none focus-visible:ring-2 focus-visible:ring-gray-400"
+            className=" outline-none focus-visible:ring-2 focus-visible:ring-gray-400 cursor-pointer"
           >
             <div className="size-12 bg-gray-300 text-gray-600 flex justify-center items-center">
               <User size={24} />
