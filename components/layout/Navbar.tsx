@@ -34,8 +34,10 @@ const Navbar = () => {
   ];
 
   return (
-    <section className="bg-[#F4F3F1]">
-      <div className="container flex justify-between items-center h-20 xl:h-22">
+    <section>
+      <div className="h-20 xl:h-22"></div>
+      <div className="w-full fixed top-0 bg-[#F4F3F1]">
+      <div className="container flex justify-between items-center h-20 xl:h-22 ">
         <div>
           <Link href="/">
             {/* <Image
@@ -88,6 +90,7 @@ const Navbar = () => {
           </Button>
         </div>
         {/* user dropdown */}
+      </div>
       </div>
 
       {/* sidebar */}
