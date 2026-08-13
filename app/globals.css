@@ -55,7 +55,7 @@
   --font-serif: var(--font-cormorant);
   --font-sans: var(--font-work-sans);
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: oklch(12.047% 0.00728 18.109);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -150,6 +150,16 @@
 }
 .padding-default-bottom {
   @apply pb-15 lg:pb-20 xl:pb-25;
+}
+
+.margin-default {
+  @apply my-15 lg:my-20 xl:my-25;
+}
+.margin-default-top {
+  @apply mt-15 lg:mt-20 xl:mt-25;
+}
+.margin-default-bottom {
+  @apply mb-15 lg:mb-20 xl:mb-25;
 }
 
 /* custom sidebar */
