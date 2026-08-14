@@ -1,9 +1,10 @@
+import OurCoreValues from '@/components/client/About/OurCoreValues/OurCoreValues';
 import React from 'react';
 
 const AboutPage = () => {
     return (
         <div>
-            About Page
+            <OurCoreValues/>
         </div>
     );
 };
