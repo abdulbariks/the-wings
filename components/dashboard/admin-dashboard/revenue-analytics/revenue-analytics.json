@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "totalMonthlyIncome": 48650,
+    "totalMonthlyIncomeTrend": 8.2,
+    "companiesThatLeft": 1.3,
+    "companiesThatLeftTrend": -0.4,
+    "avgRevenuePerAccount": 264,
+    "revenueKeptFromExisting": 114.2
+  },
+  "chartStats": {
+    "starting": 38200,
+    "current": 48650,
+    "bestMonth": "Jul (+$4,750)",
+    "avgNetMonthlyGain": 1741
+  },
+  "monthlyGrowth": [
+    { "month": "Jan", "income": 41800, "newSubscriptions": 3800, "upgrades": 1100, "lostRevenue": 800, "netGain": 4100 },
+    { "month": "Feb", "income": 42500, "newSubscriptions": 3900, "upgrades": 1200, "lostRevenue": 850, "netGain": 4250 },
+    { "month": "Mar", "income": 43100, "newSubscriptions": 4000, "upgrades": 1150, "lostRevenue": 900, "netGain": 4250 },
+    { "month": "Apr", "income": 44800, "newSubscriptions": 4100, "upgrades": 1300, "lostRevenue": 880, "netGain": 4520 },
+    { "month": "May", "income": 45200, "newSubscriptions": 4150, "upgrades": 1250, "lostRevenue": 920, "netGain": 4480 },
+    { "month": "Jun", "income": 46800, "newSubscriptions": 4200, "upgrades": 1350, "lostRevenue": 950, "netGain": 4600 },
+    { "month": "Jul", "income": 47200, "newSubscriptions": 4500, "upgrades": 1400, "lostRevenue": 1150, "netGain": 4750 },
+    { "month": "Aug", "income": 46500, "newSubscriptions": 4100, "upgrades": 1200, "lostRevenue": 1300, "netGain": 4000 },
+    { "month": "Sep", "income": 46100, "newSubscriptions": 4000, "upgrades": 1100, "lostRevenue": 1200, "netGain": 3900 },
+    { "month": "Oct", "income": 46800, "newSubscriptions": 4300, "upgrades": 1250, "lostRevenue": 1050, "netGain": 4500 },
+    { "month": "Nov", "income": 45900, "newSubscriptions": 4400, "upgrades": 1300, "lostRevenue": 980, "netGain": 4720 },
+    { "month": "Dec", "income": 48650, "newSubscriptions": 4550, "upgrades": 1400, "lostRevenue": 900, "netGain": 5050 }
+  ]
+}

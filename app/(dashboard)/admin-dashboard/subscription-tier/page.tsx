@@ -59,7 +59,7 @@ const mockSubscriptionData: SubscriptionRow[] = [
 
 export default function SubscriptionTierPage() {
   return (
-    <div className="p-6 bg-[#f8f8f8] min-h-screen space-y-4">
+    <div className="bg-[#f8f8f8] min-h-screen space-y-4">
       <div className="flex items-center justify-between gap-4 bg-white p-3 rounded-md border border-zinc-200/80 shadow-sm">
         <div className="flex items-center gap-3 flex-1 max-w-md">
           <div className="relative w-full">

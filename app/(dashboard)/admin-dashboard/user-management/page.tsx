@@ -70,11 +70,66 @@ const mockUserData: UserRow[] = [
     joinedDate: "2025-11-15",
     lastActive: "15 mins ago",
   },
+  {
+    id: "US-8012",
+    name: "Astrid Lindholm",
+    email: "a.lindholm@royalballet.se",
+    role: "Company Director",
+    organization: "Royal Swedish Ballet (First Soloist)",
+    status: "Active",
+    verified: true,
+    joinedDate: "2025-11-14",
+    lastActive: "12 mins ago",
+  },
+  {
+    id: "US-8013",
+    name: "Björn Eriksson",
+    email: "b.eriksson@royalballet.se",
+    role: "Company Director",
+    organization: "Artistic Director at National Dance T...",
+    status: "Pending",
+    verified: true,
+    joinedDate: "2025-10-30",
+    lastActive: "5 mins ago",
+  },
+  {
+    id: "US-8014",
+    name: "Camilla Sundqvist",
+    email: "c.sundqvist@royalballet.se",
+    role: "Dancer",
+    organization: "Principal Performer at Bolshoi Ballet",
+    status: "Suspended",
+    verified: true,
+    joinedDate: "2025-12-01",
+    lastActive: "22 mins ago",
+  },
+  {
+    id: "US-8015",
+    name: "David Holmgren",
+    email: "d.holmgren@royalballet.se",
+    role: "Creative Professionals",
+    organization: "Talent Scout for Broadway Productio...",
+    status: "Active",
+    verified: false,
+    joinedDate: "2025-11-10",
+    lastActive: "33 mins ago",
+  },
+  {
+    id: "US-8016",
+    name: "Elisabeth Nyström",
+    email: "e.nystrom@royalballet.se",
+    role: "Company Director",
+    organization: "CEO of Contemporary Dance Collect...",
+    status: "Suspended",
+    verified: false,
+    joinedDate: "2025-11-15",
+    lastActive: "15 mins ago",
+  },
 ];
 
 export default function UserManagementPage() {
   return (
-    <div className="p-6 bg-[#f8f8f8] min-h-screen space-y-4">
+    <div className="bg-[#f8f8f8] min-h-screen space-y-4">
       <div className="flex items-center justify-between gap-4 bg-white p-3 rounded-md border border-zinc-200/80 shadow-sm">
         <div className="flex items-center gap-3 flex-1 max-w-xl">
           <div className="relative w-full">
