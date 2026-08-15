@@ -1,0 +1,14 @@
+{
+  "user": {
+    "role": "Company / Director",
+    "email": "astrid.lindholm@royalballet.dk",
+    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150"
+  },
+  "preferences": {
+    "profileVisibility": true,
+    "industryDigest": true,
+    "greenLightSignals": true,
+    "auditionInvitations": true,
+    "directMessages": true
+  }
+}
