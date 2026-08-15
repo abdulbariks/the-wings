@@ -1,0 +1,98 @@
+{
+  "matches": [
+    {
+      "id": "match-1",
+      "name": "Astrid Lindholm",
+      "role": "Principal Soloist",
+      "location": "Copenhagen, Denmark",
+      "initialLetter": "A",
+      "email": "j.moreau@operadeparis.fr",
+      "messages": [
+        {
+          "id": "msg-1",
+          "sender": "Jean-Luc Moreau",
+          "timestamp": "Jul 28, 09:14",
+          "content": "Hello Astrid, we reviewed your neoclassical variation and classical barre reel. We are exceptionally impressed.",
+          "isOutgoing": false
+        },
+        {
+          "id": "msg-2",
+          "sender": "Astrid Lindholm",
+          "timestamp": "Jul 28, 10:02",
+          "content": "Thank you M. Moreau! I am deeply honored. I am very interested in the principal guest soloist opening for Swan Lake.",
+          "isOutgoing": true
+        },
+        {
+          "id": "msg-3",
+          "sender": "Jean-Luc Moreau",
+          "timestamp": "Jul 28, 11:30",
+          "content": "We would love to invite you for the in-person audition and partnering session in Palais Garnier on August 12th.",
+          "isOutgoing": false
+        }
+      ]
+    },
+    {
+      "id": "match-2",
+      "name": "Elena Petrova",
+      "role": "Principal Soloist",
+      "location": "Moscow, Russia",
+      "initialLetter": "E",
+      "email": "elena.petrova@ballet.ru",
+      "messages": []
+    },
+    {
+      "id": "match-3",
+      "name": "Alexei Ivanov",
+      "role": "Choreographer",
+      "location": "Saint Petersburg, Russia",
+      "initialLetter": "A",
+      "email": "a.ivanov@ballet.ru",
+      "messages": []
+    },
+    {
+      "id": "match-4",
+      "name": "María Gonzalez",
+      "role": "Ballet Mistress",
+      "location": "Madrid, Spain",
+      "initialLetter": "M",
+      "email": "m.gonzalez@dance.es",
+      "messages": []
+    },
+    {
+      "id": "match-5",
+      "name": "James O'Connor",
+      "role": "Artistic Director",
+      "location": "Dublin, Ireland",
+      "initialLetter": "J",
+      "email": "j.oconnor@theatre.ie",
+      "messages": []
+    },
+    {
+      "id": "match-6",
+      "name": "Sofia Kim",
+      "role": "Principal Dancer",
+      "location": "Seoul, South Korea",
+      "initialLetter": "S",
+      "email": "s.kim@ballet.kr",
+      "messages": []
+    },
+    {
+      "id": "match-7",
+      "name": "Luca Bianchi",
+      "role": "Composer",
+      "location": "Milan, Italy",
+      "initialLetter": "L",
+      "email": "l.bianchi@music.it",
+      "messages": []
+    },
+    {
+      "id": "match-8",
+      "name": "Nadia Rahimi",
+      "role": "Costume Designer",
+      "location": "Tehran, Iran",
+      "initialLetter": "N",
+      "email": "n.rahimi@design.ir",
+      "messages": []
+    }
+  ]
+}
