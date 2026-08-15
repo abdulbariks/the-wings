@@ -37,60 +37,67 @@ const Navbar = () => {
     <section>
       <div className="h-20 xl:h-22"></div>
       <div className="w-full fixed top-0 bg-[#F4F3F1] z-50">
-      <div className="container flex justify-between items-center h-20 xl:h-22 ">
-        <div>
-          <Link href="/">
-            {/* <Image
+        <div className="container flex justify-between items-center h-20 xl:h-22 ">
+          <div>
+            <Link href="/">
+              {/* <Image
               src="/logo.webp"
               alt="ITBA EXPO The Next 100"
               width={68}
               height={56}
             /> */}
-            <p className="text-xl md:text-3xl font-serif font-bold">The Wings</p>
-          </Link>
-        </div>
-
-        <ul className="hidden xl:flex gap-8 items-center font-medium">
-          {links.map((link) => {
-            const isActive = pathname === link.href;
-
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={`transition-colors ${
-                    isActive
-                      ? "text-primary border-b border-primary"
-                      : "text-[#777980] border-b border-[#F4F3F1]"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-
-        <div className="flex items-center gap-2 md:gap-4">
-          <Link href="/sign-in">
-            <Button variant="outline" className="px-10 hidden md:block">
-              Sign In
-            </Button>
-          </Link>
-          <Button>Join The Wings</Button>
-          <div className="hidden md:block">
-            <ProfileDropdown />
+              <p className="text-2xl md:text-3xl font-serif font-bold">
+                The Wings
+              </p>
+            </Link>
           </div>
-          <Button
-            onClick={() => setSidebarOpen(!sidebarOpen)}
-            className=" px-0 size-8 xl:hidden "
-            variant="outline"
-          >
-            <HiOutlineMenuAlt3 className="size-6" />
-          </Button>
+
+          <ul className="hidden xl:flex gap-8 items-center font-medium">
+            {links.map((link) => {
+              const isActive = pathname === link.href;
+
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={`transition-colors ${
+                      isActive
+                        ? "text-primary border-b border-primary"
+                        : "text-[#777980] border-b border-[#F4F3F1]"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+
+          <div className="flex items-center gap-2 md:gap-4">
+            <Link href="/sign-in">
+              <Button
+                variant="outline"
+                className="px-10 h-9 xl:h-14 hidden md:block"
+              >
+                Sign In
+              </Button>
+            </Link>
+            <Button className="text-sm h-9.5 lg:text-base xl:h-14">
+              Join The Wings
+            </Button>
+            <div className="hidden lg:block">
+              <ProfileDropdown />
+            </div>
+            <Button
+              onClick={() => setSidebarOpen(!sidebarOpen)}
+              className=" px-0 size-9 xl:hidden "
+              variant="outline"
+            >
+              <HiOutlineMenuAlt3 className="size-6" />
+            </Button>
+          </div>
+          {/* user dropdown */}
         </div>
-        {/* user dropdown */}
-      </div>
       </div>
 
       {/* sidebar */}

@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Heading from "@/components/ui/Heading";
 import React from "react";
 
@@ -32,6 +33,9 @@ const ForDancers = () => {
             </li>
           ))}
         </ul>
+        <div className="w-full flex items-center justify-center lg:justify-start">
+        <Button className="mt-8 md:mt-10 lg:mt-12">Create A Profile</Button>
+        </div>
       </div>
        <div
     className="min-h-125 w-full bg-cover bg-center bg-no-repeat lg:min-h-full"
