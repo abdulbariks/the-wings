@@ -16,14 +16,18 @@ interface SidebarProps {
   links: { label: string; href: string }[];
 }
 
-
-const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user, links }) => {
+const Sidebar: React.FC<SidebarProps> = ({
+  isOpen,
+  setIsOpen,
+  user,
+  links,
+}) => {
   const pathname = usePathname();
   const [logOutModalOpen, setLogOutModalOpen] = useState(false);
   return (
     <aside
       className={`
-        fixed top-0 left-0 w-full h-screen bg-[#F4F3F1] flex flex-col 
+        fixed top-0 right-0 w-full md:w-80 h-screen bg-[#F4F3F1] flex flex-col 
         transition-transform duration-300 ease-in-out z-999
         ${isOpen ? "translate-x-0" : "translate-x-full"}
       `}
@@ -31,7 +35,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user, links }) => 
       <div className="h-20  flex justify-between px-4 items-center border-b">
         <div>
           <Link href="/" onClick={() => setIsOpen(false)}>
-                      <p className="text-3xl font-semibold" >The Wings</p>
+            <p className="text-3xl font-semibold">The Wings</p>
             {/* <Image
               src="/logo.webp"
               alt="ITBA EXPO The Next 100"
@@ -40,13 +44,17 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user, links }) => 
             /> */}
           </Link>
         </div>
-        <Button onClick={() => setIsOpen(!isOpen)} variant="outline" className="size-8 px-0">
+        <Button
+          onClick={() => setIsOpen(!isOpen)}
+          variant="outline"
+          className="size-9 px-0"
+        >
           <X className="size-6" />
         </Button>
       </div>
       {/* sidebar body */}
       <div className="flex-1 overflow-auto px-4">
-        <div className="flex flex-col items-center gap-2  p-4 justify-center">
+        <div className="lg:hidden flex flex-col items-center gap-2  p-4 justify-center">
           {user?.image ? (
             <Image
               src={user.image}
@@ -81,11 +89,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, user, links }) => 
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                  className={`transition-colors ${
-                    isActive
-                      ? "text-primary border-b border-primary"
-                      : "text-[#777980] border-b border-[#F4F3F1]"
-                  }`}
+                    className={`transition-colors ${
+                      isActive
+                        ? "text-primary border-b border-primary"
+                        : "text-[#777980] border-b border-[#F4F3F1]"
+                    }`}
                   >
                     {link.label}
                   </Link>
