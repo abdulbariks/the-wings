@@ -1,0 +1,76 @@
+{
+  "companies": [
+    {
+      "id": "comp-1",
+      "companyName": "Paris Opéra Ballet",
+      "location": "Paris, France",
+      "style": "Classical & Neoclassical",
+      "openings": "Guest Soloist & Principal Contracts",
+      "salaryScale": "4,200 € / month",
+      "contractLength": "12 Months (2026/27)",
+      "repertoire": ["Swan Lake", "Giselle", "Ninjinsky Suite"],
+      "isBookmarked": false,
+      "greenLightSent": false
+    },
+    {
+      "id": "comp-2",
+      "companyName": "New York City Ballet",
+      "location": "New York, USA",
+      "style": "Contemporary & Balanchine",
+      "openings": "Soloist & Corps de Ballet Positions",
+      "salaryScale": "$5,500 / month",
+      "contractLength": "10 Months (2026/27)",
+      "repertoire": ["Jewels", "A Midsummer Night's Dream", "Episodes"],
+      "isBookmarked": true,
+      "greenLightSent": false
+    },
+    {
+      "id": "comp-3",
+      "companyName": "Bolshoi Ballet",
+      "location": "Moscow, Russia",
+      "style": "Classical",
+      "openings": "Principal & Soloist Contracts",
+      "salaryScale": "100,000 ₽ / month",
+      "contractLength": "12 Months (2026/27)",
+      "repertoire": ["Don Quixote", "La Bayadère", "Spartacus"],
+      "isBookmarked": false,
+      "greenLightSent": true
+    },
+    {
+      "id": "comp-4",
+      "companyName": "Royal Ballet",
+      "location": "London, UK",
+      "style": "Classical & Contemporary",
+      "openings": "Soloist & Artist Contracts",
+      "salaryScale": "£3,800 / month",
+      "contractLength": "11 Months (2026/27)",
+      "repertoire": ["The Sleeping Beauty", "Manon", "The Winter's Tale"],
+      "isBookmarked": false,
+      "greenLightSent": false
+    },
+    {
+      "id": "comp-5",
+      "companyName": "Australian Ballet",
+      "location": "Melbourne, Australia",
+      "style": "Contemporary & Classical",
+      "openings": "Corps de Ballet & Soloist Roles",
+      "salaryScale": "AUD 4,700 / month",
+      "contractLength": "12 Months (2026/27)",
+      "repertoire": ["La Sylphide", "Coppélia", "Glass Pieces"],
+      "isBookmarked": true,
+      "greenLightSent": true
+    },
+    {
+      "id": "comp-6",
+      "companyName": "National Ballet of Canada",
+      "location": "Toronto, Canada",
+      "style": "Neoclassical & Contemporary",
+      "openings": "Principal & Soloist Positions",
+      "salaryScale": "CAD 5,200 / month",
+      "contractLength": "12 Months (2026/27)",
+      "repertoire": ["Alice's Adventures in Wonderland", "Onegin", "After the Rain"],
+      "isBookmarked": false,
+      "greenLightSent": false
+    }
+  ]
+}

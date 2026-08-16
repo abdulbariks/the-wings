@@ -63,7 +63,7 @@ export default function DancerDashboard() {
   ];
 
   return (
-    <div className="space-y-6 max-w-7xl mx-auto">
+    <div className="space-y-6">
       {/* Profile Header */}
       <div className="bg-white p-4 rounded-lg border border-zinc-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
