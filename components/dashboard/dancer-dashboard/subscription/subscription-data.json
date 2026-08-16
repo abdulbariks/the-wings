@@ -1,0 +1,90 @@
+{
+  "subscription": {
+    "planName": "Soloist Pass",
+    "badgeText": "CURRENT PASS",
+    "accountRole": "Dancer",
+    "status": "Active — renews automatically",
+    "price": "$29",
+    "billingInterval": "/ month",
+    "purchaseDate": "July 28, 2026",
+    "nextRenewal": "August 28, 2026",
+    "paymentMethod": {
+      "cardType": "Visa",
+      "last4": "4242",
+      "expires": "09 / 2028"
+    },
+    "features": [
+      "Unlimited reviewers on one workspace",
+      "Advanced search and filtering",
+      "Personal and shared shortlists",
+      "Unlimited audition invitations",
+      "Verification company badge"
+    ]
+  },
+  "invoices": [
+    {
+      "id": "INV-2026-07",
+      "date": "2026-07-28",
+      "description": "Soloist Pass — Monthly Access",
+      "amount": "$29.00",
+      "status": "Paid",
+      "pdfUrl": "#"
+    },
+    {
+      "id": "INV-2026-08",
+      "date": "2026-07-29",
+      "description": "Duo Pass — Monthly Access",
+      "amount": "$49.00",
+      "status": "Paid",
+      "pdfUrl": "#"
+    },
+    {
+      "id": "INV-2026-09",
+      "date": "2026-07-30",
+      "description": "Family Pass — Monthly Access",
+      "amount": "$89.00",
+      "status": "Paid",
+      "pdfUrl": "#"
+    },
+    {
+      "id": "INV-2026-10",
+      "date": "2026-08-01",
+      "description": "Workshop Ticket — Weekend Intensive",
+      "amount": "$120.00",
+      "status": "Paid",
+      "pdfUrl": "#"
+    },
+       {
+      "id": "INV-2026-07",
+      "date": "2026-07-28",
+      "description": "Soloist Pass — Monthly Access",
+      "amount": "$29.00",
+      "status": "Paid",
+      "pdfUrl": "#"
+    },
+    {
+      "id": "INV-2026-08",
+      "date": "2026-07-29",
+      "description": "Duo Pass — Monthly Access",
+      "amount": "$49.00",
+      "status": "Paid",
+      "pdfUrl": "#"
+    },
+    {
+      "id": "INV-2026-09",
+      "date": "2026-07-30",
+      "description": "Family Pass — Monthly Access",
+      "amount": "$89.00",
+      "status": "Paid",
+      "pdfUrl": "#"
+    },
+    {
+      "id": "INV-2026-10",
+      "date": "2026-08-01",
+      "description": "Workshop Ticket — Weekend Intensive",
+      "amount": "$120.00",
+      "status": "Paid",
+      "pdfUrl": "#"
+    }
+  ]
+}
