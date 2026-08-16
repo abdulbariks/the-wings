@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Plus, X, Upload } from "lucide-react";
+import Image from "next/image";
 
 export interface CompanyProfileData {
   companyName: string;
@@ -240,10 +241,11 @@ export function EditProfileForm({
                     key={img.id}
                     className="relative w-44 h-28 group border border-zinc-200"
                   >
-                    <img
+                    <Image
                       src={img.url}
                       alt="Production Stage"
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                     <button
                       type="button"

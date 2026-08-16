@@ -1,0 +1,40 @@
+{
+  "companies": [
+    {
+      "id": "comp-1",
+      "name": "Royal Swedish Ballet",
+      "subtitle": "Interest sent — waiting for response",
+      "status": "Waiting for Company Response"
+    },
+    {
+      "id": "comp-2",
+      "name": "Berlin Philharmonic Orchestra",
+      "subtitle": "Proposal for collaboration sent to Music Director",
+      "status": "Waiting for Company Response"
+    },
+    {
+      "id": "comp-3",
+      "name": "New York City Opera",
+      "subtitle": "Rehearsal schedule shared with production team",
+      "status": "Waiting for Company Response"
+    },
+    {
+      "id": "comp-4",
+      "name": "Paris Opera Ballet",
+      "subtitle": "Costume designs approved by Creative Team",
+      "status": "Waiting for Company Response"
+    },
+    {
+      "id": "comp-5",
+      "name": "Royal Shakespeare Company",
+      "subtitle": "Script revisions submitted to Director",
+      "status": "Waiting for Company Response"
+    },
+    {
+      "id": "comp-6",
+      "name": "La Scala Theatre",
+      "subtitle": "Venue booking confirmed for upcoming season",
+      "status": "Waiting for Company Response"
+    }
+  ]
+}
