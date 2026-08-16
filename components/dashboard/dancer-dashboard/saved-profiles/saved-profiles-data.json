@@ -1,0 +1,48 @@
+{
+  "profiles": [
+    {
+      "id": "profile-1",
+      "companyName": "Paris Opéra Ballet",
+      "location": "Paris, France",
+      "style": "Classical & Neoclassical",
+      "openings": "Guest Soloist & Principal Contracts",
+      "salaryScale": "4,200 € / month",
+      "contractLength": "12 Months (2026/27)",
+      "repertoire": ["Swan Lake", "Giselle", "Ninjinsky Suite"],
+      "greenLightSent": true
+    },
+    {
+      "id": "profile-2",
+      "companyName": "New York City Ballet",
+      "location": "New York, USA",
+      "style": "Contemporary & Balanchine",
+      "openings": "Soloist & Corps de Ballet Positions",
+      "salaryScale": "$5,500 / month",
+      "contractLength": "10 Months (2026/27)",
+      "repertoire": ["Jewels", "A Midsummer Night's Dream", "Episodes"],
+      "greenLightSent": true
+    },
+        {
+      "id": "profile-3",
+      "companyName": "Paris Opéra Ballet",
+      "location": "Paris, France",
+      "style": "Classical & Neoclassical",
+      "openings": "Guest Soloist & Principal Contracts",
+      "salaryScale": "4,200 € / month",
+      "contractLength": "12 Months (2026/27)",
+      "repertoire": ["Swan Lake", "Giselle", "Ninjinsky Suite"],
+      "greenLightSent": true
+    },
+    {
+      "id": "profile-4",
+      "companyName": "New York City Ballet",
+      "location": "New York, USA",
+      "style": "Contemporary & Balanchine",
+      "openings": "Soloist & Corps de Ballet Positions",
+      "salaryScale": "$5,500 / month",
+      "contractLength": "10 Months (2026/27)",
+      "repertoire": ["Jewels", "A Midsummer Night's Dream", "Episodes"],
+      "greenLightSent": true
+    }
+  ]
+}
