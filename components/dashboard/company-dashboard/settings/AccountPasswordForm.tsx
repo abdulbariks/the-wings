@@ -21,6 +21,24 @@ export function AccountPasswordForm({
   const [newPassword, setNewPassword] = React.useState("••••••••••••");
   const [confirmPassword, setConfirmPassword] = React.useState("••••••••••••");
 
+  const [avatarUrl, setAvatarUrl] = React.useState(initialAvatarUrl);
+  const fileInputRef = React.useRef<HTMLInputElement>(null);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file && file.type.startsWith("image/")) {
+      setAvatarUrl(URL.createObjectURL(file));
+    }
+  };
+
+  const handleUploadClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleDeleteClick = () => {
+    setAvatarUrl("");
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle password/email update logic here
@@ -42,14 +60,22 @@ export function AccountPasswordForm({
             </label>
             <div className="flex items-center gap-2">
               <Avatar className="h-12 w-12 rounded-none border border-zinc-200">
-                <AvatarImage src={initialAvatarUrl} alt="User Avatar" />
+                <AvatarImage src={avatarUrl} alt="User Avatar" />
                 <AvatarFallback className="rounded-none">AL</AvatarFallback>
               </Avatar>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/*"
+                onChange={handleFileChange}
+                className="hidden"
+              />
               <div className="flex flex-col gap-1">
                 <Button
                   type="button"
                   variant="outline"
                   size="icon"
+                  onClick={handleUploadClick}
                   className="h-6 w-6 rounded-none border-zinc-200 bg-zinc-50 text-zinc-600 hover:bg-zinc-100"
                 >
                   <Upload className="w-3 h-3" />
@@ -58,6 +84,7 @@ export function AccountPasswordForm({
                   type="button"
                   variant="outline"
                   size="icon"
+                  onClick={handleDeleteClick}
                   className="h-6 w-6 rounded-none border-zinc-200 bg-zinc-50 text-zinc-600 hover:bg-zinc-100"
                 >
                   <Trash2 className="w-3 h-3" />
