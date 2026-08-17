@@ -159,12 +159,27 @@ const Footer = () => {
 
         <div className="bg-white/12 p-4 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            <h6 className="text-3xl lg:text-[40px] font-bold font-serif">Notes <i>from backstage.</i> </h6>
-            <p className="text-[#D2D2D5] text-sm lg:text-base mt-2.5">Casting calls, season news and quiet advice - once a month.</p>
+            <h6 className="text-3xl lg:text-[40px] font-bold font-serif">
+              Notes <i>from backstage.</i>{" "}
+            </h6>
+            <p className="text-[#D2D2D5] text-sm lg:text-base mt-2.5">
+              Casting calls, season news and quiet advice - once a month.
+            </p>
           </div>
-          <form className="flex flex-col md:flex-row items-center gap-4">
-            <input className="h-13 outline outline-white px-4 md:px-6 lg:px-8" placeholder="Enter your email" type="email" name="email" />
-            <Button className="uppercase text-black hover:bg-white/95" variant="outline">Subscribe</Button>
+          <form className="flex flex-col items-center gap-4 md:flex-row">
+            <input
+              className="h-13 border border-white bg-transparent px-4 outline-none md:px-6 lg:px-8"
+              placeholder="Enter your email"
+              type="email"
+              name="email"
+            />
+
+            <Button
+              className="h-13 uppercase text-black hover:bg-white/95"
+              variant="outline"
+            >
+              Subscribe
+            </Button>
           </form>
         </div>
 
