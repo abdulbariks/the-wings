@@ -21,7 +21,7 @@ const stats = [
 
 const TrustedBy = () => {
   return (
-    <section className="bg-[#E9E9EA] text-primary margin-default-bottom">
+    <section className="bg-[#F4F3F1] text-primary margin-default-bottom">
       <div className="container mx-auto">
         <div className="flex min-h-30 items-center flex-col lg:flex-row py-10">
           {/* Trusted By */}

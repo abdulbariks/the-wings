@@ -78,7 +78,7 @@ const PricingPlan = () => {
             alt="Pricing Plan - Ballet Pointe Shoes"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            className="object-cover grayscale"
           />
         </div>
       </div>
