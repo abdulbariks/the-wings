@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Heading from "@/components/ui/Heading";
 import Image from "next/image";
 import FAQAccordion from "./FAQAccordion";
+import Link from "next/link";
 
 const FAQ = () => {
   return (
@@ -31,12 +32,14 @@ const FAQ = () => {
           </div>
         </div>
         <div className="flex items-center justify-center mt-8 md:mt-10 lg:mt-12">
-          <Button
-            variant="outline"
-            className="h-14 px-8 text-sm uppercase bg-transparent border-black hover:bg-black/5 text-black rounded-none font-medium"
-          >
-            View All FAQS
-          </Button>
+          <Link href="/faq">
+            <Button
+              variant="outline"
+              className="h-14 px-8 text-sm uppercase bg-transparent border-black hover:bg-black/5 text-black rounded-none font-medium"
+            >
+              View All FAQS
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
