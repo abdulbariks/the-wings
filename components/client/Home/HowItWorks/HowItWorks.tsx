@@ -61,7 +61,7 @@ const HowItWorks = () => {
                   }`}
                 >
                   {/* Image wrapper */}
-                  <div className="relative aspect-[4/5] w-full overflow-hidden">
+                  <div className="relative aspect-4/5 w-full overflow-hidden">
                     <Image
                       src={step.imageSrc}
                       alt={step.title}
