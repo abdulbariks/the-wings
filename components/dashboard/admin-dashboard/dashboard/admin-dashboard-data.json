@@ -1,0 +1,92 @@
+{
+  "kpis": [
+    {
+      "id": "kpi-1",
+      "title": "Total Dancer",
+      "value": "4,820",
+      "badgeText": "+12%",
+      "badgeType": "trend-up",
+      "icon": "users"
+    },
+    {
+      "id": "kpi-2",
+      "title": "Active Company",
+      "value": "184",
+      "badgeText": "3 Pending",
+      "badgeType": "pending",
+      "icon": "building"
+    },
+    {
+      "id": "kpi-3",
+      "title": "Casting Matches",
+      "value": "342",
+      "badgeText": "This Week",
+      "badgeType": "info",
+      "icon": "check-circle"
+    },
+    {
+      "id": "kpi-4",
+      "title": "Monthly Revenue",
+      "value": "$48,650",
+      "badgeText": "-0.9%",
+      "badgeType": "trend-down",
+      "icon": "dollar"
+    }
+  ],
+  "activityStream": [
+    {
+      "id": "act-1",
+      "title": "Marseille National Ballet submitted verification docs",
+      "description": "3 documents uploaded (KBIS, License, Authorization). Queue status: Pending.",
+      "timestamp": "10 mins ago"
+    },
+    {
+      "id": "act-2",
+      "title": "High severity flag on Audition #AUD-882",
+      "description": "Reported by USR-8012 for non-compliant fee requirement. Auto-escalated to Compliance.",
+      "timestamp": "28 mins ago"
+    },
+    {
+      "id": "act-3",
+      "title": "New audition slots opened for Summer Gala",
+      "description": "15 slots available across 3 cities. Open for registration until May 15th.",
+      "timestamp": "5 mins ago"
+    },
+    {
+      "id": "act-4",
+      "title": "System update scheduled for May 10",
+      "description": "Scheduled maintenance window: 02:00 - 04:00 UTC.",
+      "timestamp": "12 mins ago"
+    }
+  ],
+  "quickActions": [
+    {
+      "id": "action-1",
+      "label": "Company Verification",
+      "badgeCount": 2,
+      "icon": "building-check",
+      "path": "/admin/verifications"
+    },
+    {
+      "id": "action-2",
+      "label": "Content Moderation",
+      "badgeCount": 3,
+      "icon": "shield-alert",
+      "path": "/admin/moderation"
+    },
+    {
+      "id": "action-3",
+      "label": "User Directory",
+      "badgeCount": null,
+      "icon": "user-check",
+      "path": "/admin/users"
+    },
+    {
+      "id": "action-4",
+      "label": "Revenue Analytics",
+      "badgeCount": null,
+      "icon": "line-chart",
+      "path": "/admin/analytics"
+    }
+  ]
+}
