@@ -1,0 +1,54 @@
+{
+  "moderationItems": [
+    {
+      "id": "mod-1",
+      "title": "Urgent Guest Soloist Position - Unclear Fee Structure",
+      "author": "Soren Vang (Neumeier Inst.)",
+      "reportId": "MOD-901",
+      "category": "Audition Listing",
+      "contentPreview": "\"Posting requires dancers to pay a 150 EUR \"audition registration fee\" via non-traceable wire before receiving contract details for Swan Lake tour.\"",
+      "flagReason": "This posting broke a rule — dancers shouldn't be asked to pay before receiving contract details",
+      "status": "Pending"
+    },
+    {
+      "id": "mod-2",
+      "title": "Unauthorized Rehearsal Video Distribution",
+      "author": "Anonymized Account #4412",
+      "reportId": "MOD-902",
+      "category": "Forum Post",
+      "contentPreview": "\"Thread contains Google Drive link hosting unreleased choreography footage from La Scala 2027 season production rehearsal.\"",
+      "flagReason": "Someone used another person's content without permission.",
+      "status": "Pending"
+    },
+    {
+      "id": "mod-3",
+      "title": "Unauthorized Use of Dancer Images in Promotional Material",
+      "author": "Miguel Fernandez (DanceWatch)",
+      "reportId": "MOD-903",
+      "category": "Promotion Post",
+      "contentPreview": "\"Promotional flyers showcase dancer photos without consent for an upcoming contemporary dance festival.\"",
+      "flagReason": "Violation of Privacy and Image Rights Policy 5.4 (Use of personal images requires explicit permission).",
+      "status": "Pending"
+    },
+    {
+      "id": "mod-4",
+      "title": "False Salary Representation in Job Posting",
+      "author": "Jasmine Lee (BalletNet)",
+      "reportId": "MOD-904",
+      "category": "Job Advertisement",
+      "contentPreview": "\"Job ad promises a salary of $10,000/month, but official contract offers only $6,000/month.\"",
+      "flagReason": "Violation of Platform Fair Job Posting Rule 2.3 (Accurate compensation details mandatory).",
+      "status": "Pending"
+    },
+    {
+      "id": "mod-5",
+      "title": "Spam Advertising for Unverified Masterclass",
+      "author": "Alex Rivera",
+      "reportId": "MOD-905",
+      "category": "Forum Post",
+      "contentPreview": "\"Repeated posts redirecting users to external payment gateway for unverified virtual workshop.\"",
+      "flagReason": "Automated promotional spam detected across multiple threads.",
+      "status": "Resolved"
+    }
+  ]
+}
