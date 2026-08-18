@@ -1,0 +1,108 @@
+{
+  "profile": {
+    "name": "Astrid Lindholm",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=250&auto=format&fit=crop",
+    "role": "Verified Soloist",
+    "details": "Principal Soloist • Royal Danish Ballet Alumnus • Copenhagen, Denmark",
+    "completeness": 95,
+    "reelUrl": "https://example.com/reel"
+  },
+  "kpis": [
+    {
+      "id": "kpi-1",
+      "title": "Companies I Applied To",
+      "value": "4",
+      "badgeText": "2 Company Shortlisted Me",
+      "badgeType": "highlight",
+      "icon": "user-check"
+    },
+    {
+      "id": "kpi-2",
+      "title": "Interview Invitations",
+      "value": "3",
+      "badgeText": "1 Response Pending",
+      "badgeType": "pending",
+      "icon": "inbox"
+    },
+    {
+      "id": "kpi-3",
+      "title": "Saved Companies",
+      "value": "12",
+      "badgeText": "Bookmarked",
+      "badgeType": "neutral",
+      "icon": "bookmark"
+    },
+    {
+      "id": "kpi-4",
+      "title": "Profile Views",
+      "value": "1,240",
+      "badgeText": "+18%",
+      "badgeType": "trend-up",
+      "icon": "bar-chart"
+    }
+  ],
+  "applications": [
+    {
+      "id": "app-1",
+      "company": "Paris Opéra Ballet",
+      "role": "Principal Guest Artist (Swan Lake)",
+      "subtitle": "Callback scheduled for Aug 12 in Paris",
+      "date": "2026-07-28",
+      "status": "Company Shortlisted Me",
+      "statusVariant": "outline"
+    },
+    {
+      "id": "app-2",
+      "company": "Royal Swedish Ballet",
+      "role": "Soloist Contract (Neoclassical)",
+      "subtitle": "Audition confirmed for Sept 15 in London",
+      "date": "2026-07-20",
+      "status": "Contract Received",
+      "statusVariant": "outline"
+    },
+    {
+      "id": "app-3",
+      "company": "Netherlands Dance Theatre",
+      "role": "Guest Choreography Project",
+      "subtitle": "Artistic Director reviewing dance reel",
+      "date": "2026-07-15",
+      "status": "Being Reviewed",
+      "statusVariant": "outline"
+    },
+    {
+      "id": "app-4",
+      "company": "Berlin State Ballet",
+      "role": "Corps de Ballet Audition",
+      "subtitle": "Awaiting final callback decisions",
+      "date": "2026-07-02",
+      "status": "Audition Done",
+      "statusVariant": "dark"
+    }
+  ],
+  "upcomingSchedule": [
+    {
+      "id": "sch-1",
+      "day": "12",
+      "month": "August",
+      "title": "Paris Opéra Ballet Callback",
+      "location": "Studio 4, Palais Garnier, Paris",
+      "tag": "In-person Audition"
+    },
+    {
+      "id": "sch-2",
+      "day": "18",
+      "month": "August",
+      "title": "Royal Swedish Ballet Contract Review",
+      "location": "Online Contract Call",
+      "tag": "Contract Signing"
+    },
+    {
+      "id": "sch-3",
+      "day": "25",
+      "month": "August",
+      "title": "Contemporary Partnering Masterclass",
+      "location": "Copenhagen Dance Institute",
+      "tag": "Masterclass Workshop"
+    }
+  ]
+}
