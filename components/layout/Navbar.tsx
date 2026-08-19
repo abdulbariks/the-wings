@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <section>
       <div className="h-20 xl:h-22"></div>
-      <div className="w-full fixed top-0 bg-[#F4F3F1] z-999">
+      <div className="w-full fixed top-0 bg-[#F4F3F1] z-50">
         <div className="container flex justify-between items-center h-20 xl:h-22 ">
           <div>
             <Link href="/">

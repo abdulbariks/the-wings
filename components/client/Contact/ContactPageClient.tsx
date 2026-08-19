@@ -136,7 +136,7 @@ export default function ContactPageClient() {
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Type message"
               required
-              className="min-h-40 resize-y rounded-none border border-zinc-200 bg-white px-3 py-3 text-sm focus-visible:border-black focus-visible:ring-0 placeholder:text-zinc-400 font-sans"
+              className="min-h-40 resize-y rounded-none border border-zinc-200 bg-white px-3 py-3 text-sm focus-visible:ring-0 placeholder:text-zinc-400 font-sans"
             />
           </div>
 
@@ -144,7 +144,6 @@ export default function ContactPageClient() {
           <div className=" flex justify-end lg:justify-start">
             <Button
               type="submit"
-              className="lg:h-14 w-full md:w-fit  bg-black text-white hover:bg-black/90 px-8 py-3 rounded-none font-sans font-medium tracking-widest text-xs transition-colors duration-200 uppercase cursor-pointer"
             >
               Send Message
             </Button>
@@ -156,10 +155,10 @@ export default function ContactPageClient() {
           {/* Dancer support */}
           <div className="bg-[#F4F3F1] px-5 py-4 ">
             <h3 className="font-serif text-xl text-primary">Dancer support</h3>
-            <p className="font-sans font-bold text-[#1c1f23] text-sm tracking-wide">
+            <p className="font-sans font-bold text-[#4A4C56] text-sm tracking-wide mt-1">
               dancers@thewings.com
             </p>
-            <p className="font-sans text-xs md:text-sm text-zinc-500 leading-relaxed pt-1">
+            <p className="font-sans text-xs md:text-sm text-[#4A4C56] leading-relaxed mt-4">
               Profile, applications, stage pass and account questions
             </p>
           </div>
@@ -169,10 +168,10 @@ export default function ContactPageClient() {
             <h3 className="font-serif text-xl text-primary">
               Company workspaces
             </h3>
-            <p className="font-sans font-bold text-[#1c1f23] text-sm tracking-wide">
+            <p className="font-sans font-bold text-[#4A4C56] text-sm tracking-wide mt-1">
               company@thewings.com
             </p>
-            <p className="font-sans text-xs md:text-sm text-zinc-500 leading-relaxed pt-1">
+            <p className="font-sans text-xs md:text-sm text-[#4A4C56] leading-relaxed mt-4">
               Verification, reviewer seats and casting workflow.
             </p>
           </div>

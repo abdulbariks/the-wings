@@ -25,10 +25,10 @@ const ProfileDropdown = () => {
               <User size={24} />
             </div>
           </button>
-        }
+      }
       />
 
-      <DropdownMenuContent align="end" className="w-56 rounded-none ">
+      <DropdownMenuContent align="end" className="z-100 w-56 rounded-none ">
         <DropdownMenuGroup>
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
         </DropdownMenuGroup>
