@@ -27,12 +27,9 @@ export default function EditProfilePage() {
     interviewQuestions: editProfileData.profile.interviewQuestions,
   };
 
-  const initialGalleryImages = [
-    editProfileData.profile.galleryImage,
-    "https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=400&auto=format&fit=crop",
-  ];
+  const initialGalleryImages = editProfileData.profile.galleryImages;
 
-  const initialDanceVideos = [editProfileData.profile.danceVideo];
+  const initialDanceVideos = editProfileData.profile.danceVideos;
 
   const handleSave = (data: EditProfileFormValues) => {
     console.log("Saved Profile Data:", data);

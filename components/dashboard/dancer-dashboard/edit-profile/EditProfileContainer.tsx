@@ -12,6 +12,7 @@ import {
   CurrentCompanyFormValues,
 } from "./CurrentCompanyModal";
 import { Plus, Trash2, X, UploadCloud, ChevronDown, Film } from "lucide-react";
+import Image from "next/image";
 
 export interface EmploymentItem {
   id: string;
@@ -80,6 +81,7 @@ export function EditProfileContainer({
       },
     });
 
+  // eslint-disable-next-line react-hooks/incompatible-library
   const skills = watch("skills") || [];
   const galleryImages = watch("galleryImages") || [];
   const danceVideos = watch("danceVideos") || [];
@@ -288,7 +290,7 @@ export function EditProfileContainer({
             </label>
             <Textarea
               {...register("aboutYou")}
-              className="min-h-[100px] text-xs bg-zinc-100/60 border-zinc-200/80 rounded-none text-zinc-900 focus-visible:ring-1 focus-visible:ring-zinc-400 resize-y"
+              className="min-h-25 text-xs bg-zinc-100/60 border-zinc-200/80 rounded-none text-zinc-900 focus-visible:ring-1 focus-visible:ring-zinc-400 resize-y"
             />
           </div>
         </Card>
@@ -460,34 +462,34 @@ export function EditProfileContainer({
               <span className="text-[10px] text-zinc-400">PNG, JPG, WEBP</span>
             </div>
 
-            <label className="border border-dashed border-zinc-300 bg-zinc-50/50 hover:bg-zinc-100/60 cursor-pointer flex flex-col items-center justify-center text-center p-5 transition-colors">
-              <UploadCloud className="w-5 h-5 text-zinc-400 mb-1.5" />
-              <span className="text-xs font-medium text-zinc-800">
-                Drag & drop or click to upload
-              </span>
-              <span className="text-[10px] text-zinc-400 pt-0.5">
-                Select multiple image files
-              </span>
-              <input
-                type="file"
-                accept="image/*"
-                multiple
-                className="hidden"
-                onChange={handleImageUpload}
-              />
-            </label>
-
             {/* Gallery Images Previews */}
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 pt-1">
+              <label className="border border-dashed border-zinc-300 bg-zinc-50/50 hover:bg-zinc-100/60 cursor-pointer flex flex-col items-center justify-center text-center p-5 transition-colors">
+                <UploadCloud className="w-5 h-5 text-zinc-400 mb-1.5" />
+                <span className="text-xs font-medium text-zinc-800">
+                  Drag & drop or click to upload
+                </span>
+                <span className="text-[10px] text-zinc-400 pt-0.5">
+                  Select multiple image files
+                </span>
+                <input
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  className="hidden"
+                  onChange={handleImageUpload}
+                />
+              </label>
               {galleryImages.map((imgUrl, index) => (
                 <div
                   key={index}
                   className="relative aspect-square border border-zinc-200 bg-zinc-900 overflow-hidden group"
                 >
-                  <img
+                  <Image
                     src={imgUrl}
                     alt={`Upload ${index + 1}`}
-                    className="w-full h-full object-cover group-hover:opacity-80 transition-opacity"
+                    fill
+                    className="object-cover group-hover:opacity-80 transition-opacity"
                   />
                   <button
                     type="button"
@@ -510,29 +512,28 @@ export function EditProfileContainer({
               <span className="text-[10px] text-zinc-400">MP4, MOV, WEBM</span>
             </div>
 
-            <label className="border border-dashed border-zinc-300 bg-zinc-50/50 hover:bg-zinc-100/60 cursor-pointer flex flex-col items-center justify-center text-center p-5 transition-colors">
-              <Film className="w-5 h-5 text-zinc-400 mb-1.5" />
-              <span className="text-xs font-medium text-zinc-800">
-                Drag & drop or click to upload
-              </span>
-              <span className="text-[10px] text-zinc-400 pt-0.5">
-                Select multiple video files
-              </span>
-              <input
-                type="file"
-                accept="video/*"
-                multiple
-                className="hidden"
-                onChange={handleVideoUpload}
-              />
-            </label>
-
             {/* Dance Videos Previews */}
-            <div className="grid grid-cols-2 gap-2 pt-1">
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 pt-1">
+              <label className="border border-dashed border-zinc-300 bg-zinc-50/50 hover:bg-zinc-100/60 cursor-pointer flex flex-col items-center justify-center text-center p-5 transition-colors">
+                <Film className="w-5 h-5 text-zinc-400 mb-1.5" />
+                <span className="text-xs font-medium text-zinc-800">
+                  Drag & drop or click to upload
+                </span>
+                <span className="text-[10px] text-zinc-400 pt-0.5">
+                  Select multiple video files
+                </span>
+                <input
+                  type="file"
+                  accept="video/*"
+                  multiple
+                  className="hidden"
+                  onChange={handleVideoUpload}
+                />
+              </label>
               {danceVideos.map((videoUrl, index) => (
                 <div
                   key={index}
-                  className="relative aspect-video border border-zinc-200 bg-zinc-900 overflow-hidden group flex items-center justify-center"
+                  className="relative aspect-square border border-zinc-200 bg-zinc-900 overflow-hidden group flex items-center justify-center"
                 >
                   <video
                     src={videoUrl}
@@ -580,7 +581,7 @@ export function EditProfileContainer({
                 </label>
                 <Textarea
                   {...register(`interviewQuestions.${index}.answer`)}
-                  className="min-h-[90px] text-xs bg-zinc-100/60 border-zinc-200/80 rounded-none text-zinc-900 focus-visible:ring-1 focus-visible:ring-zinc-400 resize-y"
+                  className="min-h-22.5 text-xs bg-zinc-100/60 border-zinc-200/80 rounded-none text-zinc-900 focus-visible:ring-1 focus-visible:ring-zinc-400 resize-y"
                 />
               </div>
             </div>

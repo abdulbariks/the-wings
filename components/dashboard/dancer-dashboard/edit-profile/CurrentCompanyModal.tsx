@@ -18,7 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Calendar as CalendarIcon, Send, X } from "lucide-react";
+import { Calendar as CalendarIcon, Send } from "lucide-react";
 
 export interface CurrentCompanyFormValues {
   companyName: string;
@@ -51,6 +51,7 @@ export function CurrentCompanyModal({
       },
     });
 
+  // eslint-disable-next-line react-hooks/incompatible-library
   const isCurrentlyWorking = watch("isCurrentlyWorking");
 
   const handleFormSubmit = (data: CurrentCompanyFormValues) => {
@@ -66,13 +67,6 @@ export function CurrentCompanyModal({
           <DialogTitle className="font-mono text-base font-bold uppercase tracking-wider text-zinc-900">
             Current Company
           </DialogTitle>
-          <button
-            type="button"
-            onClick={onClose}
-            className="text-zinc-500 hover:text-zinc-900 transition-colors"
-          >
-            <X className="w-4 h-4" />
-          </button>
         </DialogHeader>
 
         <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-5">
@@ -86,7 +80,7 @@ export function CurrentCompanyModal({
                 defaultValue="Corps de Ballet"
                 onValueChange={(val) => setValue("companyName", val as string)}
               >
-                <SelectTrigger className="h-10 text-xs bg-white border-zinc-200/80 rounded-none text-zinc-900 focus:ring-1 focus:ring-zinc-400">
+                <SelectTrigger className="h-10! text-xs bg-white border-zinc-200/80 rounded-none text-zinc-900 focus:ring-1 focus:ring-zinc-400">
                   <SelectValue placeholder="Select Role / Company" />
                 </SelectTrigger>
                 <SelectContent className="rounded-none text-xs">
