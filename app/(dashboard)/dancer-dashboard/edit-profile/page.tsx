@@ -5,6 +5,7 @@ import {
   EditProfileFormValues,
 } from "@/components/dashboard/dancer-dashboard/edit-profile/EditProfileContainer";
 import editProfileData from "@/components/dashboard/dancer-dashboard/edit-profile/edit-profile-data.json";
+import { useRouter } from "next/navigation";
 
 export default function EditProfilePage() {
   const initialValues = {
@@ -35,8 +36,10 @@ export default function EditProfilePage() {
     console.log("Saved Profile Data:", data);
   };
 
+  const router = useRouter();
   const handleCancel = () => {
     console.log("Editing cancelled");
+    router.push("/dancer-dashboard/public-profile");
   };
 
   return (

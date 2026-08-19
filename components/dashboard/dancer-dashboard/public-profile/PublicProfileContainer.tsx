@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Textarea } from "@/components/ui/textarea";
@@ -13,9 +13,9 @@ import {
   Ruler,
   Pencil,
   Download,
-  PlayCircle,
   Play,
 } from "lucide-react";
+import Image from "next/image";
 
 export interface ProfileHeader {
   name: string;
@@ -261,7 +261,7 @@ export function PublicProfileContainer({
               </div>
               <div className="flex justify-between py-1 border-b border-zinc-100">
                 <span className="text-zinc-400">Email:</span>
-                <span className="font-medium text-zinc-900 truncate max-w-[180px]">
+                <span className="font-medium text-zinc-900 truncate max-w-45">
                   {details.email}
                 </span>
               </div>
@@ -320,7 +320,7 @@ export function PublicProfileContainer({
               placeholder="Add a private note..."
               value={privateNote}
               onChange={(e) => setPrivateNote(e.target.value)}
-              className="min-h-[90px] text-xs bg-zinc-50 border-zinc-200/80 rounded-none text-zinc-800 placeholder:text-zinc-400 focus-visible:ring-1 focus-visible:ring-zinc-400 resize-y"
+              className="min-h-22.5 text-xs bg-zinc-50 border-zinc-200/80 rounded-none text-zinc-800 placeholder:text-zinc-400 focus-visible:ring-1 focus-visible:ring-zinc-400 resize-y"
             />
           </div>
         </Card>
@@ -335,12 +335,13 @@ export function PublicProfileContainer({
           {gallery.map((imgUrl, i) => (
             <div
               key={i}
-              className="aspect-square bg-zinc-100 border border-zinc-200/60 overflow-hidden group cursor-pointer"
+              className="aspect-square bg-zinc-100 border border-zinc-200/60 overflow-hidden group cursor-pointer relative"
             >
-              <img
+              <Image
                 src={imgUrl}
                 alt={`Dance gallery item ${i + 1}`}
-                className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
+                fill
+                className="object-cover filter grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
               />
             </div>
           ))}
@@ -368,12 +369,13 @@ export function PublicProfileContainer({
               key={vid.id}
               className="relative aspect-video bg-zinc-900 border border-zinc-200/60 overflow-hidden group cursor-pointer"
             >
-              <img
+              <Image
                 src={vid.thumbnail}
                 alt={vid.title}
-                className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 opacity-85 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105"
+                fill
+                className="object-cover filter grayscale group-hover:grayscale-0 opacity-85 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-3">
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-3">
                 <div className="bg-white/95 backdrop-blur-xs py-2 px-3 flex items-center justify-between border border-zinc-200/80">
                   <span className="text-xs font-medium text-zinc-900 truncate">
                     {vid.title}
