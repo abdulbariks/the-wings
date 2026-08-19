@@ -8,10 +8,14 @@ import {
   VideoItem,
 } from "@/components/dashboard/dancer-dashboard/public-profile/PublicProfileContainer";
 import profileData from "@/components/dashboard/dancer-dashboard/public-profile/public-profile-data.json";
+import { useRouter } from "next/navigation";
 
 export default function PublicProfilePage() {
+  const router = useRouter();
+
   const handleEditProfile = () => {
     console.log("Edit profile requested");
+    router.push("/dancer-dashboard/edit-profile");
   };
 
   const handleDownloadResume = () => {
