@@ -2,6 +2,7 @@
 
 import { EditCompanyProfileContainer, EditCompanyProfileFormValues } from '@/components/dashboard/company-dashboard/edit-profile/EditCompanyProfileContainer';
 import companyData from '@/components/dashboard/company-dashboard/edit-profile/edit-company-profile-data.json';
+import { useRouter } from 'next/navigation';
 
 
 export default function EditCompanyProfilePage() {
@@ -19,9 +20,10 @@ export default function EditCompanyProfilePage() {
   const handleSave = (data: EditCompanyProfileFormValues) => {
     console.log('Saved Company Profile Data:', data);
   };
-
+const router = useRouter();
   const handleCancel = () => {
     console.log('Edit cancelled');
+    router.push('/company-dashboard/public-profile');
   };
 
   return (

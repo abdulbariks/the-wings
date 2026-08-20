@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Plus, X, UploadCloud } from 'lucide-react';
+import Image from 'next/image';
 
 export interface EditCompanyProfileFormValues {
   companyName: string;
@@ -219,9 +220,9 @@ export function EditCompanyProfileContainer({
                 Production & Stage Gallery
               </label>
 
-              <div className="flex items-start gap-3">
+              <div className="flex flex-col md:flex-row md:items-start gap-3">
                 {/* Drag & Drop Upload Box */}
-                <label className="border border-dashed border-zinc-300 bg-[#f4f4f4] hover:bg-[#ebebeb] cursor-pointer flex flex-col items-center justify-center text-center p-4 w-44 h-28 shrink-0 transition-colors">
+                <label className="border border-dashed border-zinc-300 bg-[#f4f4f4] hover:bg-[#ebebeb] cursor-pointer flex flex-col items-center justify-center text-center p-4 w-full md:w-44 h-28 shrink-0 transition-colors">
                   <UploadCloud className="w-5 h-5 text-zinc-500 mb-1" />
                   <span className="text-[11px] text-zinc-600 font-normal leading-tight max-w-27.5">
                     Drag & drop or click to upload
@@ -240,12 +241,13 @@ export function EditCompanyProfileContainer({
                   {productionGallery.map((imgUrl, index) => (
                     <div
                       key={index}
-                      className="relative w-36 h-28 border border-zinc-200 bg-zinc-900 shrink-0 group"
+                      className="relative w-full md:w-36 h-28 border border-zinc-200 bg-zinc-900 shrink-0 group"
                     >
-                      <img
+                      <Image
                         src={imgUrl}
                         alt={`Production Stage ${index + 1}`}
-                        className="w-full h-full object-cover group-hover:opacity-85 transition-opacity"
+                        fill
+                        className="object-cover group-hover:opacity-85 transition-opacity"
                       />
                       <button
                         type="button"
