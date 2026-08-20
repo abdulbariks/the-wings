@@ -1,0 +1,54 @@
+{
+  "companies": [
+    {
+      "id": "ver-1",
+      "companyName": "Marseille National Contemporary Ballet",
+      "registrationNumber": "FR-882-90123-B",
+      "taxIdNumber": "FR8920192039",
+      "uploadedLicense": "culture_license_2026.pdf",
+      "licenseUrl": "#",
+      "country": "France",
+      "status": "Pending"
+    },
+    {
+      "id": "ver-2",
+      "companyName": "Berlin Modern Dance Ensemble",
+      "registrationNumber": "DE-451-67890-C",
+      "taxIdNumber": "DE8934021098",
+      "uploadedLicense": "culture_license_2025.pdf",
+      "licenseUrl": "#",
+      "country": "Germany",
+      "status": "Pending"
+    },
+    {
+      "id": "ver-3",
+      "companyName": "Tokyo Contemporary Dance Company",
+      "registrationNumber": "JP-334-55678-D",
+      "taxIdNumber": "JP9023746501",
+      "uploadedLicense": "culture_license_2027.pdf",
+      "licenseUrl": "#",
+      "country": "Japan",
+      "status": "Pending"
+    },
+    {
+      "id": "ver-4",
+      "companyName": "New York City Ballet Collective",
+      "registrationNumber": "US-123-45678-E",
+      "taxIdNumber": "US9845739201",
+      "uploadedLicense": "culture_license_2024.pdf",
+      "licenseUrl": "#",
+      "country": "USA",
+      "status": "Pending"
+    },
+    {
+      "id": "ver-5",
+      "companyName": "London Royal Academy of Dance",
+      "registrationNumber": "UK-991-23456-A",
+      "taxIdNumber": "GB123456789",
+      "uploadedLicense": "academy_license_2026.pdf",
+      "licenseUrl": "#",
+      "country": "United Kingdom",
+      "status": "Approved"
+    }
+  ]
+}

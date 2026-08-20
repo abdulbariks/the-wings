@@ -74,7 +74,7 @@ const Navbar = () => {
           </ul>
 
           <div className="flex items-center gap-2 md:gap-4">
-            <Link href="/sign-in">
+            <Link href="/login">
               <Button
                 variant="outline"
                 className="px-10 h-9 xl:h-14 hidden md:block"

@@ -22,9 +22,13 @@ export const Sidebar = ({ role, isOpen, onClose }: SidebarProps) => {
       <div>
         {/* Brand Header */}
         <div className="flex items-center justify-between py-2 mb-6">
-          <h1 className="text-xl font-serif tracking-[0.2em] font-medium text-white">
-            TILE WINGS
-          </h1>
+          <Link href={"/"}>
+            {" "}
+            <h1 className="text-xl font-serif tracking-[0.2em] font-medium text-white">
+              TILE WINGS
+            </h1>
+          </Link>
+
           <button
             className="lg:hidden text-zinc-400 hover:text-white"
             onClick={onClose}

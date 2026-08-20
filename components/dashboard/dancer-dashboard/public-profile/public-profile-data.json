@@ -1,0 +1,100 @@
+{
+  "profile": {
+    "name": "Astrid Lindholm",
+    "verified": true,
+    "role": "Principal Soloist",
+    "status": "Active",
+    "location": "New York, USA",
+    "age": "22 years Old",
+    "height": "5'6\" (168 cm)",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&auto=format&fit=crop",
+    "specialties": ["Ballet", "Contemporary", "Pas de Deux", "Pointe Work"],
+    "bio": "As a principal soloist, I have dedicated my career to the exploration and performance of Neoclassical and Contemporary dance. My journey began at the prestigious Royal Danish Ballet, where I honed my skills and developed a deep appreciation for the art form. Over the years, I have had the privilege of performing as a guest artist in some of the most renowned opera houses across Europe, captivating audiences with my interpretations of complex characters and intricate choreography. My repertoire includes a diverse range of works, showcasing my versatility and passion for dance. I thrive on the challenges of each performance, constantly pushing the boundaries of my artistry and seeking new ways to express emotion through movement."
+  },
+  "skillsAndRepertoire": [
+    "Swan Lake (Odette/Odile)",
+    "Giselle",
+    "Kylián Repertoire",
+    "Forsythe Technique",
+    "Neumeier Repertoire",
+    "Balanchine's Jewels",
+    "Petipa's Sleeping Beauty",
+    "Martha Graham Legacy",
+    "Bournonville Style",
+    "Ashton Classics"
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "initial": "N",
+      "title": "Corps de Ballet",
+      "company": "New York City Ballet",
+      "period": "2022 • Present"
+    },
+    {
+      "id": "exp-2",
+      "initial": "M",
+      "title": "Trainee",
+      "company": "Miami City Ballet",
+      "period": "2020 • 2022"
+    },
+    {
+      "id": "exp-3",
+      "initial": "B",
+      "title": "Apprentice",
+      "company": "Boston Ballet",
+      "period": "2018 • 2020"
+    }
+  ],
+  "details": {
+    "rank": "Principal Soloist",
+    "height": "5'8\" (173cm)",
+    "workVisa": "Unrestricted",
+    "email": "astridlindholm@email.com",
+    "phone": "+1(555) 123-4567",
+    "nationality": "USA",
+    "languages": "English, Spanish",
+    "visaStatus": "US Citizen",
+    "availability": "Sep 01, 2026",
+    "relocation": "Yes"
+  },
+  "gallery": [
+    "https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?q=80&w=400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518834107812-67b0b7c58434?q=80&w=400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1535525153412-5a42439a210d?q=80&w=400&auto=format&fit=crop"
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Salsa Sensations",
+      "thumbnail": "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?q=80&w=500&auto=format&fit=crop"
+    },
+    {
+      "id": "vid-2",
+      "title": "Hip-Hop Groove",
+      "thumbnail": "https://images.unsplash.com/photo-1535525153412-5a42439a210d?q=80&w=500&auto=format&fit=crop"
+    },
+    {
+      "id": "vid-3",
+      "title": "Tango Twilight",
+      "thumbnail": "https://images.unsplash.com/photo-1518834107812-67b0b7c58434?q=80&w=500&auto=format&fit=crop"
+    },
+    {
+      "id": "vid-4",
+      "title": "Jazz Funk Fusion",
+      "thumbnail": "https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=500&auto=format&fit=crop"
+    },
+    {
+      "id": "vid-5",
+      "title": "Breakdance Beats",
+      "thumbnail": "https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?q=80&w=500&auto=format&fit=crop"
+    },
+    {
+      "id": "vid-6",
+      "title": "Ballet Dreams",
+      "thumbnail": "https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=500&auto=format&fit=crop"
+    }
+  ]
+}
