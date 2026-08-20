@@ -61,7 +61,7 @@ export const RegisterForm = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto space-y-6">
+    <div className="w-full mx-auto space-y-6">
       {/* Brand Header */}
       <div className="text-center">
         <h1 className="font-serif tracking-[0.25em] text-3xl sm:text-4xl font-semibold text-zinc-900 uppercase">
@@ -70,7 +70,7 @@ export const RegisterForm = () => {
       </div>
 
       {/* Form Card */}
-      <div className="bg-white p-6 sm:p-8 rounded-lg border border-zinc-200/80 shadow-sm space-y-5">
+      <div className="bg-white w-full p-6 sm:p-8 border border-zinc-200/80 shadow-sm space-y-5">
         <h2 className="font-serif text-center text-xl font-medium text-zinc-800 border-b border-zinc-100 pb-3">
           Create Dancer Account
         </h2>
@@ -83,13 +83,13 @@ export const RegisterForm = () => {
               name="fullName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+                  <FormLabel className=" font-semibold uppercase tracking-wider text-zinc-500">
                     Full Name
                   </FormLabel>
                   <FormControl>
                     <Input
                       placeholder="e.g. Astrid Lindholm"
-                      className="bg-zinc-100/70 border-none h-10 text-xs focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
+                      className="bg-zinc-100/70 border-none h-12 text-xs focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400 mt-1"
                       {...field}
                     />
                   </FormControl>
@@ -104,14 +104,14 @@ export const RegisterForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+                  <FormLabel className=" font-semibold uppercase tracking-wider text-zinc-500">
                     Email Address
                   </FormLabel>
                   <FormControl>
                     <Input
                       placeholder="a.lindholm@ballet.dk"
                       type="email"
-                      className="bg-zinc-100/70 border-none h-10 text-xs focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
+                      className="bg-zinc-100/70 border-none h-12 text-xs focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400 mt-1"
                       {...field}
                     />
                   </FormControl>
@@ -126,7 +126,7 @@ export const RegisterForm = () => {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+                  <FormLabel className=" font-semibold uppercase tracking-wider text-zinc-500">
                     Password
                   </FormLabel>
                   <FormControl>
@@ -134,7 +134,7 @@ export const RegisterForm = () => {
                       <Input
                         type={showPassword ? "text" : "password"}
                         placeholder="••••••••••••"
-                        className="bg-zinc-100/70 border-none h-10 text-xs pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
+                        className="bg-zinc-100/70 border-none h-12 text-xs pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400 mt-1"
                         {...field}
                       />
                       <button
@@ -161,7 +161,7 @@ export const RegisterForm = () => {
               name="confirmPassword"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+                  <FormLabel className=" font-semibold uppercase tracking-wider text-zinc-500">
                     Confirm Password
                   </FormLabel>
                   <FormControl>
@@ -169,7 +169,7 @@ export const RegisterForm = () => {
                       <Input
                         type={showConfirmPassword ? "text" : "password"}
                         placeholder="••••••••••••"
-                        className="bg-zinc-100/70 border-none h-10 text-xs pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
+                        className="bg-zinc-100/70 border-none h-12 text-xs pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400 mt-1"
                         {...field}
                       />
                       <button
@@ -203,7 +203,7 @@ export const RegisterForm = () => {
                       <Checkbox
                         checked={field.value}
                         onCheckedChange={field.onChange}
-                        className="h-3.5 w-3.5 rounded border-zinc-300"
+                        className="h-3.5 w-3.5 border-zinc-300"
                       />
                     </FormControl>
                     <label className="text-[10px] text-zinc-500 leading-none">
@@ -233,7 +233,7 @@ export const RegisterForm = () => {
             <Button
               type="submit"
               disabled={form.formState.isSubmitting}
-              className="w-full h-10 bg-[#111111] hover:bg-zinc-800 text-white font-medium text-xs tracking-wide rounded transition-colors mt-2"
+              className="w-full capitalize"
             >
               Create Dancer Account
             </Button>

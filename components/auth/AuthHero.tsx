@@ -23,7 +23,7 @@ export const AuthHero = ({ imageUrl, title, description }: AuthHeroProps) => {
 
       {/* Content Overlay Box at Bottom */}
       <div className="relative z-10 mt-auto bg-white/95 backdrop-blur-sm p-4  border border-zinc-200/80 shadow-lg">
-        <h2 className="font-serif text-2xl sm:text-3xl  leading-tight font-medium text-zinc-900 mb-3">
+        <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl leading-tight font-semibold text-zinc-900 mb-3">
           {title}
         </h2>
         <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">

@@ -49,7 +49,7 @@ export const EmailVerifyForm = ({
   };
 
   return (
-    <div className="w-full max-w-md mx-auto space-y-6">
+    <div className="w-full mx-auto space-y-6">
       {/* Brand Header */}
       <div className="text-center">
         <h1 className="font-serif tracking-[0.25em] text-3xl sm:text-4xl font-semibold text-zinc-900 uppercase">
@@ -58,7 +58,7 @@ export const EmailVerifyForm = ({
       </div>
 
       {/* Main Card Container */}
-      <div className="bg-white p-6 sm:p-8 rounded-lg border border-zinc-200/80 shadow-sm space-y-6">
+      <div className="bg-white p-6 sm:p-8 border border-zinc-200/80 shadow-sm space-y-6">
         {/* Header Message */}
         <div className="text-center space-y-2 border-b border-zinc-100 pb-4">
           <h2 className="font-serif text-xl font-medium text-zinc-900">
@@ -80,7 +80,7 @@ export const EmailVerifyForm = ({
               name="pin"
               render={({ field }) => (
                 <FormItem className="space-y-3 text-center">
-                  <FormLabel className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500 block text-left">
+                  <FormLabel className=" font-semibold uppercase tracking-wider text-zinc-500 block text-left">
                     6-Digit Verification Security Code
                   </FormLabel>
                   <FormControl>
@@ -89,12 +89,12 @@ export const EmailVerifyForm = ({
                       {...field}
                       className="gap-2 justify-between"
                     >
-                      <InputOTPGroup className="w-full grid grid-cols-6 gap-2">
+                      <InputOTPGroup className="w-full  grid grid-cols-6 gap-2 ">
                         {[0, 1, 2, 3, 4, 5].map((index) => (
                           <InputOTPSlot
                             key={index}
                             index={index}
-                            className="w-full h-12 bg-zinc-100/80 border-none rounded text-sm text-center font-medium text-zinc-800 focus-visible:ring-1 focus-visible:ring-zinc-400"
+                            className="w-full h-12 bg-zinc-100/80 border-none rounded-none! text-sm text-center font-medium text-zinc-800 focus-visible:ring-1 focus-visible:ring-zinc-400"
                           />
                         ))}
                       </InputOTPGroup>
@@ -108,8 +108,8 @@ export const EmailVerifyForm = ({
             {/* Submit Button */}
             <Button
               type="submit"
+              className="w-full capitalize"
               disabled={form.formState.isSubmitting}
-              className="w-full h-11 bg-[#111111] hover:bg-zinc-800 text-white font-medium text-xs tracking-wide rounded transition-colors"
             >
               Verify & Continue to Onboarding
             </Button>

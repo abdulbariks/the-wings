@@ -65,14 +65,14 @@ export const LoginForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+                  <FormLabel className=" font-semibold uppercase tracking-wider text-zinc-500 ">
                     Email Address
                   </FormLabel>
                   <FormControl>
                     <Input
                       placeholder="a.lindholm@ballet.dk"
                       type="email"
-                      className="bg-zinc-100/70 border-none h-11 text-xs focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
+                      className="bg-zinc-100/70 border-none h-12 text-xs focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400 mt-1"
                       {...field}
                     />
                   </FormControl>
@@ -88,7 +88,7 @@ export const LoginForm = () => {
               render={({ field }) => (
                 <FormItem>
                   <div className="flex justify-between items-center">
-                    <FormLabel className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+                    <FormLabel className="font-semibold uppercase tracking-wider text-zinc-500">
                       Password
                     </FormLabel>
                     <Link
@@ -103,7 +103,7 @@ export const LoginForm = () => {
                       <Input
                         type={showPassword ? "text" : "password"}
                         placeholder="••••••••••••"
-                        className="bg-zinc-100/70 border-none h-11 text-xs pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
+                        className="bg-zinc-100/70 border-none h-12 text-xs pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
                         {...field}
                       />
                       <button
@@ -127,7 +127,7 @@ export const LoginForm = () => {
             {/* Submit Button */}
             <Button
               type="submit"
-              className="w-full"
+              className="w-full capitalize"
               disabled={form.formState.isSubmitting}
             >
               Sign In
