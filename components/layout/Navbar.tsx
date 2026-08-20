@@ -21,6 +21,7 @@ const Navbar = () => {
     name: "Jacob Jones",
     email: "exhibitors@industryexpo2027.com",
     image: "/logo.webp",
+    role: "admin" as const
   };
 
   const links = [
