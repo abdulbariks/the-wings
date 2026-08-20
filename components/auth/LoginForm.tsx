@@ -43,7 +43,7 @@ export const LoginForm = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto space-y-8">
+    <div className="w-full mx-auto space-y-8">
       {/* Brand Header */}
       <div className="text-center">
         <h1 className="font-serif tracking-[0.25em] text-3xl sm:text-4xl font-semibold text-zinc-900 uppercase">
@@ -52,7 +52,7 @@ export const LoginForm = () => {
       </div>
 
       {/* Main Card Container */}
-      <div className="bg-white p-8 sm:p-10 rounded-lg border border-zinc-200/80 shadow-sm space-y-6">
+      <div className="bg-white p-8 sm:p-10 border border-zinc-200/80 shadow-sm space-y-6">
         <h2 className="font-serif text-center text-xl font-medium text-zinc-800 border-b border-zinc-100 pb-4">
           Sign In To Your Account
         </h2>
@@ -127,8 +127,8 @@ export const LoginForm = () => {
             {/* Submit Button */}
             <Button
               type="submit"
+              className="w-full"
               disabled={form.formState.isSubmitting}
-              className="w-full h-11 bg-[#111111] hover:bg-zinc-800 text-white font-medium text-xs tracking-wide rounded transition-colors mt-2"
             >
               Sign In
             </Button>
