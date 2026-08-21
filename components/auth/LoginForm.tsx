@@ -93,7 +93,7 @@ export const LoginForm = () => {
                     </FormLabel>
                     <Link
                       href="/forgot-password"
-                      className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 hover:text-zinc-700 transition-colors"
+                      className=" font-semibold hover:underline text-sm uppercase tracking-wider text-zinc-400 hover:text-zinc-700 transition-colors"
                     >
                       Forgot Password?
                     </Link>
@@ -137,11 +137,11 @@ export const LoginForm = () => {
 
         {/* Signup Footer Link */}
         <div className="text-center pt-2">
-          <p className="text-xs text-zinc-500">
+          <p className=" text-zinc-500">
             Don&apos;t have an account?{" "}
             <Link
               href="/register"
-              className="font-semibold text-zinc-900 hover:underline inline-flex items-center gap-0.5"
+              className="text-sm font-semibold text-zinc-900 hover:underline inline-flex items-center gap-0.5"
             >
               Join The Wings &rarr;
             </Link>

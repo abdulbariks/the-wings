@@ -81,8 +81,8 @@ export const ForgotPasswordForm = () => {
         </Form>
 
         <div className="text-center pt-1">
-          <p className="text-xs text-zinc-500">
-            Remember your password?{" "}
+          <p className="text-sm text-zinc-500">
+            Remember your password?
             <Link
               href="/login"
               className="font-semibold text-zinc-900 underline underline-offset-2"

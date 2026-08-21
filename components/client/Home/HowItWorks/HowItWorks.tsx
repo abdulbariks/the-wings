@@ -29,7 +29,7 @@ const steps = [
   },
 ];
 
-const HowItWorks = () => {
+const HowItWorksSection = () => {
   return (
     <section className="bg-[#0F0D0B] padding-default">
       <div className="container">
@@ -95,4 +95,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default HowItWorksSection;

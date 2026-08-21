@@ -206,7 +206,7 @@ export const RegisterForm = () => {
                         className="h-3.5 w-3.5 border-zinc-300"
                       />
                     </FormControl>
-                    <label className="text-[10px] text-zinc-500 leading-none">
+                    <label className="text-sm text-zinc-500 leading-none">
                       I agree to the{" "}
                       <Link
                         href="/terms"
@@ -242,7 +242,7 @@ export const RegisterForm = () => {
 
         {/* Sign In Link */}
         <div className="text-center pt-1">
-          <p className="text-xs text-zinc-500">
+          <p className="text-sm text-zinc-500">
             Already have an account?{" "}
             <Link
               href="/login"
