@@ -25,7 +25,7 @@ export function DancerSearchBar({
       {isShortlistPage ? (
         <div className="flex items-center gap-2">
           <Link
-            href="/company/browse-dancers"
+            href="/company-dashboard/browse-dancers"
             className="inline-flex items-center gap-2 text-sm font-serif font-medium text-zinc-900 hover:underline"
           >
             <ArrowLeft className="w-4 h-4 text-zinc-700" />
@@ -59,7 +59,7 @@ export function DancerSearchBar({
           </div>
         </div>
       ) : (
-        <Link href="/company-dashboard/browse-dancers">
+        <Link href="/company-dashboard/browse-dancers/short-list">
           <Button
             type="button"
             variant="outline"
