@@ -1,0 +1,82 @@
+{
+  "dancers": [
+    {
+      "id": "1",
+      "name": "Astrid Lindholm",
+      "location": "Copenhagen, Denmark",
+      "initialLetter": "A",
+      "rank": "Principal Soloist",
+      "height": "5'8\" (173cm)",
+      "workVisa": "Unrestricted",
+      "pointeSkill": "Mastery",
+      "repertoire": ["Swan Lake (Odette/Odile)", "Giselle", "Kylian Repertoire"],
+      "isShortlisted": false,
+      "greenLightSent": false
+    },
+    {
+      "id": "2",
+      "name": "Mateo Ramirez",
+      "location": "Buenos Aires, Argentina",
+      "initialLetter": "M",
+      "rank": "First Soloist",
+      "height": "5'10\" (178cm)",
+      "workVisa": "Restricted",
+      "pointeSkill": "Advanced",
+      "repertoire": ["Don Quixote (Basilio)", "La Bayadère", "Balanchine Repertoire"],
+      "isShortlisted": true,
+      "greenLightSent": true
+    },
+    {
+      "id": "3",
+      "name": "Sofia Novak",
+      "location": "Prague, Czech Republic",
+      "initialLetter": "S",
+      "rank": "Corps de Ballet",
+      "height": "5'5\" (165cm)",
+      "workVisa": "Unrestricted",
+      "pointeSkill": "Intermediate",
+      "repertoire": ["Sleeping Beauty (Flora)", "Coppélia", "Ashton Repertoire"],
+      "isShortlisted": true,
+      "greenLightSent": true
+    },
+    {
+      "id": "4",
+      "name": "Liam O'Connor",
+      "location": "Dublin, Ireland",
+      "initialLetter": "L",
+      "rank": "Soloist",
+      "height": "5'10\" (178cm)",
+      "workVisa": "Restricted",
+      "pointeSkill": "Advanced",
+      "repertoire": ["Giselle (Albrecht)", "Romeo and Juliet", "Balanchine Repertoire"],
+      "isShortlisted": false,
+      "greenLightSent": true
+    },
+    {
+      "id": "5",
+      "name": "Maya Chen",
+      "location": "Toronto, Canada",
+      "initialLetter": "M",
+      "rank": "Principal",
+      "height": "5'6\" (168cm)",
+      "workVisa": "Unrestricted",
+      "pointeSkill": "Expert",
+      "repertoire": ["Swan Lake (Odette/Odile)", "The Nutcracker", "Contemporary Works"],
+      "isShortlisted": true,
+      "greenLightSent": true
+    },
+    {
+      "id": "6",
+      "name": "Elena Petrova",
+      "location": "Moscow, Russia",
+      "initialLetter": "E",
+      "rank": "Coryphée",
+      "height": "5'7\" (170cm)",
+      "workVisa": "Restricted",
+      "pointeSkill": "Intermediate",
+      "repertoire": ["Sleeping Beauty (Aurora)", "Coppélia", "Classical Ballet Repertoire"],
+      "isShortlisted": false,
+      "greenLightSent": false
+    }
+  ]
+}

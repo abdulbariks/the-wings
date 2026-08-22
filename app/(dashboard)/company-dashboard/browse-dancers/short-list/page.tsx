@@ -6,7 +6,7 @@ import { Dancer, DancerCard } from '@/components/dashboard/company-dashboard/bro
 import { DancerSearchBar } from '@/components/dashboard/company-dashboard/browse-dancers/DancerSearchBar';
 
 
-export default function BrowseDancersPage() {
+export default function ViewMyShortlistPage() {
   const [dancers, setDancers] = React.useState<Dancer[]>(initialData.dancers);
   const [searchQuery, setSearchQuery] = React.useState('');
 
@@ -22,7 +22,10 @@ export default function BrowseDancersPage() {
     );
   };
 
-  const filteredDancers = dancers.filter((d) => {
+  // Filter only shortlisted items
+  const shortlistedDancers = dancers.filter((d) => d.isShortlisted);
+
+  const filteredDancers = shortlistedDancers.filter((d) => {
     const q = searchQuery.toLowerCase();
     return (
       d.name.toLowerCase().includes(q) ||
@@ -38,18 +41,26 @@ export default function BrowseDancersPage() {
         <DancerSearchBar
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
+          isShortlistPage={true}
+          title="My Saved Talent Shortlist"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredDancers.map((dancer) => (
-            <DancerCard
-              key={dancer.id}
-              dancer={dancer}
-              onToggleShortlist={handleToggleShortlist}
-              onToggleGreenLight={handleToggleGreenLight}
-            />
-          ))}
-        </div>
+        {filteredDancers.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredDancers.map((dancer) => (
+              <DancerCard
+                key={dancer.id}
+                dancer={dancer}
+                onToggleShortlist={handleToggleShortlist}
+                onToggleGreenLight={handleToggleGreenLight}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="bg-[#f8f8f8] border border-zinc-200/80 p-12 text-center text-xs text-zinc-400 font-mono">
+            No shortlisted dancers found.
+          </div>
+        )}
       </div>
     </div>
   );
