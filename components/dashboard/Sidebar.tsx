@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { UserRole } from "./types/dashboard";
 import { navigationByRole } from "./data/dashboard-data";
 import { IconRenderer } from "./icon-renderer";
-import { LogOut, PanelRightOpen, } from "lucide-react";
+import { LogOut, PanelRightOpen } from "lucide-react";
 
 interface SidebarProps {
   role: UserRole;
@@ -18,27 +18,26 @@ export const Sidebar = ({ role, isOpen, onClose }: SidebarProps) => {
   const navGroups = navigationByRole[role] || [];
 
   const navContent = (
-    <div className="flex flex-col h-full bg-[#111111] text-white w-75 p-6 justify-between">
-      <div>
-        {/* Brand Header */}
-        <div className="flex items-center justify-between lg:justify-center py-2 mb-6 w-full ">
-          <Link href={"/"}>
-            {" "}
-            <h1 className="text-3xl font-serif text-center font-medium text-white">
-              TILE WINGS
-            </h1>
-          </Link>
+    <div className="flex flex-col h-full bg-[#111111] text-white w-75 py-6 justify-between">
+      {/* Brand Header */}
+      <div className="flex items-center justify-between lg:justify-center py-2 mb-6 w-full px-6">
+        <Link href={"/"}>
+          <h1 className="text-3xl font-serif text-center font-medium text-white">
+            TILE WINGS
+          </h1>
+        </Link>
 
-          <button
-            className="lg:hidden text-zinc-400 hover:text-white"
-            onClick={onClose}
-          >
-            <PanelRightOpen className="w-5 h-5" />
-          </button>
-        </div>
+        <button
+          className="lg:hidden text-zinc-400 hover:text-white"
+          onClick={onClose}
+        >
+          <PanelRightOpen className="w-5 h-5" />
+        </button>
+      </div>
 
-        {/* Navigation Groups */}
-        <nav className="space-y-6">
+      {/* Navigation Groups */}
+      <div className="px-6 overflow-y-auto">
+        <nav className="space-y-6 ">
           {navGroups.map((group) => (
             <div key={group.section}>
               <h2 className="px-2 text-xs font-semibold font-serif text-muted uppercase tracking-widest mb-3">
@@ -58,10 +57,7 @@ export const Sidebar = ({ role, isOpen, onClose }: SidebarProps) => {
                             : "text-zinc-400 hover:text-white hover:bg-zinc-800/40"
                         }`}
                       >
-                        <IconRenderer
-                          name={item.icon}
-                          className=" shrink-0"
-                        />
+                        <IconRenderer name={item.icon} className=" shrink-0" />
                         <span>{item.title}</span>
                       </Link>
                     </li>
@@ -74,7 +70,7 @@ export const Sidebar = ({ role, isOpen, onClose }: SidebarProps) => {
       </div>
 
       {/* Logout */}
-      <div className="pt-4 border-t border-zinc-800">
+      <div className="pt-4 border-t border-zinc-800 px-6">
         <button className="w-full flex items-center gap-3 px-4 py-3.5 cursor-pointer rounded-md text-xs font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/40 transition-colors">
           <LogOut className=" shrink-0" />
           <span>Log out</span>
