@@ -34,11 +34,11 @@ export function DancerCard({
   onViewProfile,
 }: DancerCardProps) {
   return (
-    <Card className="border border-zinc-200/80 shadow-none rounded-none bg-white p-5 flex flex-col justify-between space-y-4">
+    <Card className="border border-border shadow-none rounded-none bg-card p-5 flex flex-col justify-between space-y-4">
       {/* Header Info */}
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[#f2f2f2] border border-zinc-200/60 flex items-center justify-center shrink-0">
+          <div className="w-10 h-10 bg-[#f2f2f2] border border-border flex items-center justify-center shrink-0">
             <span className="font-serif text-lg font-bold text-zinc-900">
               {dancer.initialLetter}
             </span>
@@ -58,7 +58,7 @@ export function DancerCard({
           type="button"
           variant="outline"
           onClick={() => onToggleShortlist(dancer.id)}
-          className="w-8 h-8 p-0 rounded-none bg-[#f8f8f8] border border-zinc-200/60 text-zinc-700 hover:bg-zinc-200"
+          className="w-8 h-8 p-0 rounded-none bg-[#f8f8f8] border border-border text-zinc-700 hover:bg-zinc-200"
         >
           <Bookmark
             className={`w-4 h-4 ${

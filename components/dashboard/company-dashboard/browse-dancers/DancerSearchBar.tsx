@@ -21,7 +21,7 @@ export function DancerSearchBar({
   title,
 }: DancerSearchBarProps) {
   return (
-    <Card className="border border-zinc-200/80 shadow-none rounded-none bg-[#f8f8f8] p-3 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <Card className="border border-border shadow-none rounded-none bg-card p-3 flex flex-col sm:flex-row items-center justify-between gap-4">
       {isShortlistPage ? (
         <div className="flex items-center gap-2">
           <Link
@@ -38,9 +38,9 @@ export function DancerSearchBar({
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             placeholder="Search dancers by rank, height, repertoire..."
-            className="h-9 text-xs bg-[#f0f0f0] border-none rounded-none text-zinc-900 pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
+            className="h-9 text-xs bg-secondary border-none rounded-none text-zinc-900 pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
           />
-          <div className="absolute right-0 top-0 h-9 w-9 bg-[#1c1e22] flex items-center justify-center shrink-0">
+          <div className="absolute right-0 top-0 h-9 w-9 bg-primary flex items-center justify-center shrink-0">
             <Search className="w-3.5 h-3.5 text-white" />
           </div>
         </div>
@@ -52,9 +52,9 @@ export function DancerSearchBar({
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             placeholder="Search dancers by rank, height, repertoire..."
-            className="h-9 text-xs bg-[#f0f0f0] border-none rounded-none text-zinc-900 pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
+            className="h-9 text-xs bg-secondary border-none rounded-none text-zinc-900 pr-10 focus-visible:ring-1 focus-visible:ring-zinc-400 placeholder:text-zinc-400"
           />
-          <div className="absolute right-0 top-0 h-9 w-9 bg-[#1c1e22] flex items-center justify-center shrink-0">
+          <div className="absolute right-0 top-0 h-9 w-9 bg-primary flex items-center justify-center shrink-0">
             <Search className="w-3.5 h-3.5 text-white" />
           </div>
         </div>
@@ -63,7 +63,7 @@ export function DancerSearchBar({
           <Button
             type="button"
             variant="outline"
-            className="h-9 rounded-none border border-zinc-200 bg-[#f0f0f0] hover:bg-[#e4e4e4] text-xs text-zinc-800 flex items-center gap-1.5"
+            className="h-9 rounded-none border border-border bg-secondary hover:bg-secondary/80 text-xs text-zinc-800 flex items-center gap-1.5"
           >
             <Bookmark className="w-3.5 h-3.5 text-zinc-600" /> View My Shortlist
           </Button>
