@@ -1,0 +1,100 @@
+{
+  "dancers": [
+    {
+      "id": "1",
+      "name": "Astrid Lindholm",
+      "title": "Principal Soloist",
+      "location": "Copenhagen, Denmark",
+      "initialLetter": "A",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "2",
+      "name": "Elena Petrova",
+      "title": "Principal Soloist",
+      "location": "Moscow, Russia",
+      "initialLetter": "E",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "3",
+      "name": "Sora Takahashi",
+      "title": "Guest Soloist",
+      "location": "Tokyo, Japan",
+      "initialLetter": "S",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "4",
+      "name": "Mateo Rivera",
+      "title": "Corps de Ballet",
+      "location": "Madrid, Spain",
+      "initialLetter": "M",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "5",
+      "name": "Clara Nguyen",
+      "title": "First Soloist",
+      "location": "Toronto, Canada",
+      "initialLetter": "C",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "6",
+      "name": "Lucas Moreau",
+      "title": "Demisoloist",
+      "location": "Paris, France",
+      "initialLetter": "L",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "7",
+      "name": "Isabella Rossi",
+      "title": "Principal Dancer",
+      "location": "Milan, Italy",
+      "initialLetter": "I",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "8",
+      "name": "Frederik Jensen",
+      "title": "Character Dancer",
+      "location": "Oslo, Norway",
+      "initialLetter": "F",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "9",
+      "name": "Amina Al-Mansoor",
+      "title": "Corps de Ballet",
+      "location": "Berlin, Germany",
+      "initialLetter": "A",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "10",
+      "name": "Liam O'Connor",
+      "title": "Guest Soloist",
+      "location": "Dublin, Ireland",
+      "initialLetter": "L",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "11",
+      "name": "Camila Silva",
+      "title": "First Soloist",
+      "location": "São Paulo, Brazil",
+      "initialLetter": "C",
+      "status": "Waiting for Candidates Response"
+    },
+    {
+      "id": "12",
+      "name": "Ananya Sharma",
+      "title": "Contemporary Dancer",
+      "location": "Mumbai, India",
+      "initialLetter": "A",
+      "status": "Waiting for Candidates Response"
+    }
+  ]
+}

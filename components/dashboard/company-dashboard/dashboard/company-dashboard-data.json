@@ -1,0 +1,105 @@
+{
+  "company": {
+    "name": "Paris Opéra Ballet",
+    "isVerified": true,
+    "verifiedText": "Verified Corporate Entity",
+    "director": "Jean-Luc Moreau (Artistic Director)",
+    "license": "License #FR-889201",
+    "location": "Paris, France",
+    "logoLetter": "P"
+  },
+  "stats": [
+    {
+      "id": "auditions",
+      "label": "Open Auditions",
+      "value": "6",
+      "badge": "2 Ending Soon",
+      "icon": "Masks"
+    },
+    {
+      "id": "applied",
+      "label": "Dancers Applied",
+      "value": "148",
+      "badge": "24 new today",
+      "icon": "Users"
+    },
+    {
+      "id": "reply",
+      "label": "Awaiting Reply",
+      "value": "24",
+      "badge": "Reviewed",
+      "icon": "Clock"
+    },
+    {
+      "id": "hired",
+      "label": "Hired Dancers",
+      "value": "18",
+      "badge": "Current Team",
+      "icon": "Handshake"
+    }
+  ],
+  "shortlistedDancers": [
+    {
+      "id": "1",
+      "name": "Astrid Lindholm",
+      "title": "Principal Soloist",
+      "location": "Copenhagen, Denmark",
+      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": "2",
+      "name": "Clara Nguyen",
+      "title": "UX Designer",
+      "location": "Toronto, Canada",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": "3",
+      "name": "Clara Nguyen",
+      "title": "UX Designer",
+      "location": "Toronto, Canada",
+      "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": "4",
+      "name": "Elena Rostova",
+      "title": "First Soloist",
+      "location": "Vienna, Austria",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": "5",
+      "name": "Sophia Martinez",
+      "title": "Corps de Ballet",
+      "location": "Madrid, Spain",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": "6",
+      "name": "Amina Al-Mansoor",
+      "title": "Character Dancer",
+      "location": "Berlin, Germany",
+      "image": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=600&auto=format&fit=crop"
+    }
+  ],
+  "newApplications": [
+    {
+      "id": "app-1",
+      "name": "Astrid Lindholm",
+      "role": "Principal Soloist",
+      "matchPercentage": "98%"
+    },
+    {
+      "id": "app-2",
+      "name": "Sora Takahashi",
+      "role": "Guest Soloist",
+      "matchPercentage": "94%"
+    },
+    {
+      "id": "app-3",
+      "name": "Mateo Rivera",
+      "role": "Corps de Ballet",
+      "matchPercentage": "91%"
+    }
+  ]
+}

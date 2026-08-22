@@ -1,26 +1,35 @@
-"use client";
+'use client';
 
-import {
-  CompanyProfileData,
-  EditProfileForm,
-} from "@/components/dashboard/company-dashboard/edit-profile/EditProfileForm";
-import companyData from "@/components/dashboard/company-dashboard/edit-profile/company-profile-data.json";
+import { EditCompanyProfileContainer, EditCompanyProfileFormValues } from '@/components/dashboard/company-dashboard/edit-profile/EditCompanyProfileContainer';
+import companyData from '@/components/dashboard/company-dashboard/edit-profile/edit-company-profile-data.json';
+import { useRouter } from 'next/navigation';
 
-export default function EditProfilePage() {
-  const handleSave = (updatedData: CompanyProfileData) => {
-    // Save handler logic (e.g., API mutation or state persistence)
-    console.log("Saved Profile Data:", updatedData);
+
+export default function EditCompanyProfilePage() {
+  const initialValues: EditCompanyProfileFormValues = {
+    companyName: companyData.companyProfile.companyName,
+    headquartersLocation: companyData.companyProfile.headquartersLocation,
+    contractDuration: companyData.companyProfile.contractDuration,
+    openings: companyData.companyProfile.openings,
+    workingStyle: companyData.companyProfile.workingStyle,
+    companyOverview: companyData.companyProfile.companyOverview,
+    activeRepertoire: companyData.companyProfile.activeRepertoire,
+    productionGallery: companyData.companyProfile.productionGallery,
   };
 
+  const handleSave = (data: EditCompanyProfileFormValues) => {
+    console.log('Saved Company Profile Data:', data);
+  };
+const router = useRouter();
   const handleCancel = () => {
-    // Cancel navigation logic
-    console.log("Action cancelled");
+    console.log('Edit cancelled');
+    router.push('/company-dashboard/public-profile');
   };
 
   return (
     <div className="bg-[#f8f8f8] min-h-screen">
-      <EditProfileForm
-        initialData={companyData as CompanyProfileData}
+      <EditCompanyProfileContainer
+        initialValues={initialValues}
         onSave={handleSave}
         onCancel={handleCancel}
       />
