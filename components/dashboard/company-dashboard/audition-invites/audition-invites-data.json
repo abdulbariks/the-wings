@@ -1,0 +1,124 @@
+{
+  "invites": [
+    {
+      "id": "1",
+      "initial": "A",
+      "name": "Astrid Lindholm",
+      "location": "Copenhagen, Denmark",
+      "status": "Accepted",
+      "proposedDate": "2026-08-15",
+      "venue": "Palais Garnier, Studio 4",
+      "notes": "Please prepare 1 classical variation and 1 contemporary solo."
+    },
+    {
+      "id": "2",
+      "initial": "B",
+      "name": "Mateo Rossi",
+      "location": "Florence, Italy",
+      "status": "Pending",
+      "proposedDate": "2026-09-10",
+      "venue": "Teatro alla Scala, Rehearsal Hall 2",
+      "notes": "Focus on modern dance techniques, bring original choreography."
+    },
+    {
+      "id": "3",
+      "initial": "C",
+      "name": "Nia Williams",
+      "location": "Atlanta, USA",
+      "status": "Declined",
+      "proposedDate": "2026-10-05",
+      "venue": "Lincoln Center, Studio B",
+      "notes": "Unavailable due to prior commitments but interested in future events."
+    },
+    {
+      "id": "4",
+      "initial": "S",
+      "name": "Sora Takahashi",
+      "location": "Tokyo, Japan",
+      "status": "Accepted",
+      "proposedDate": "2026-08-20",
+      "venue": "Tokyo National Theatre, Studio 1",
+      "notes": "Prepare pas de deux selection and present classical repertoire."
+    },
+    {
+      "id": "5",
+      "initial": "E",
+      "name": "Elena Petrova",
+      "location": "Moscow, Russia",
+      "status": "Pending",
+      "proposedDate": "2026-09-18",
+      "venue": "Bolshoi Rehearsal Complex, Room 3",
+      "notes": "Focus on classical variation and pointe technique demonstration."
+    },
+    {
+      "id": "6",
+      "initial": "L",
+      "name": "Lucas Moreau",
+      "location": "Paris, France",
+      "status": "Pending",
+      "proposedDate": "2026-09-25",
+      "venue": "Palais Garnier, Studio 2",
+      "notes": "Neoclassical partnering evaluation and sight-reading choreography."
+    },
+    {
+      "id": "7",
+      "initial": "C",
+      "name": "Clara Nguyen",
+      "location": "Toronto, Canada",
+      "status": "Declined",
+      "proposedDate": "2026-10-12",
+      "venue": "Four Seasons Centre, Rehearsal Hall",
+      "notes": "Conflict with autumn performance schedule."
+    },
+    {
+      "id": "8",
+      "initial": "I",
+      "name": "Isabella Rossi",
+      "location": "Milan, Italy",
+      "status": "Accepted",
+      "proposedDate": "2026-08-28",
+      "venue": "Teatro alla Scala, Studio A",
+      "notes": "Full classical repertory review and contemporary improvisational work."
+    },
+    {
+      "id": "9",
+      "initial": "M",
+      "name": "Mateo Rivera",
+      "location": "Madrid, Spain",
+      "status": "Pending",
+      "proposedDate": "2026-09-30",
+      "venue": "Teatro Real, Rehearsal Room 4",
+      "notes": "Character dance and modern repertoire combinations."
+    },
+    {
+      "id": "10",
+      "initial": "L",
+      "name": "Liam O'Connor",
+      "location": "Dublin, Ireland",
+      "status": "Accepted",
+      "proposedDate": "2026-09-02",
+      "venue": "Abbey Theatre Rehearsal Space",
+      "notes": "Classical solos and partnering section with resident principal."
+    },
+    {
+      "id": "11",
+      "initial": "F",
+      "name": "Frederik Jensen",
+      "location": "Oslo, Norway",
+      "status": "Declined",
+      "proposedDate": "2026-10-18",
+      "venue": "Norwegian National Opera, Studio C",
+      "notes": "Current tour contract prevents attendance."
+    },
+    {
+      "id": "12",
+      "initial": "A",
+      "name": "Amina Al-Mansoor",
+      "location": "Berlin, Germany",
+      "status": "Pending",
+      "proposedDate": "2026-10-02",
+      "venue": "Staatsoper Unter den Linden, Hall 1",
+      "notes": "Bring audition shoes and prepare contemporary solo."
+    }
+  ]
+}
